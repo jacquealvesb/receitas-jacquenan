@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		339FFF67363B3C3B9E18FE47BD172A2F /* Pods-receitas-jacquenan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9790AE0C6E207D28F3386A5C3A38540 /* Pods-receitas-jacquenan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AC9D78C0482309BF273BFA10E0F9076 /* Pods-receitas-jacquenanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8BDB6910F0D181959D732434CCBEE2 /* Pods-receitas-jacquenanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D44F4E4A0F923C158294A5BCF19904C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7F4721293146AD7D8F95B3BC59FF154D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BA1A2F3C33E6856D6D0CBF54C42369BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DE10584C0C91DE8B1B55B1A3AFB87643 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6FC26386B726482AB9FF53EF64FDDC /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1E20360F9D14C2C1255958932FB5136 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE068C8267A2E41688469833C4B50934 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m */; };
+		EB382A8628B247430B61D35CFF8B4C12 /* Pods-receitas-jacquenan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F70E57689C2A0C32591016F8A205836 /* Pods-receitas-jacquenan-dummy.m */; };
+		F76ECC7EB954CC33F4FF5E7E900C28B4 /* Pods-receitas-jacquenanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A26F8D7D8F3ABAF8DE86F4BDB7C695 /* Pods-receitas-jacquenanTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FC9FFEB8A533092B536B79AC446DBBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		740A5AFA8D50FE3E94DF485E9CEF3E08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		D27C90141697A665373D4CCF87D64DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8918522B7FE00BABAF7FA7D79BD621F4;
+			remoteInfo = "Pods-receitas-jacquenan";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D79513B80AC2A8EE5D46ECE855052E1 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DC721F7F98D1417125975E380933D68 /* Pods_receitas_jacquenanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenanTests.framework; path = "Pods-receitas-jacquenanTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		124F9BD6452E6EE78FE8BBBA0C182560 /* Pods-receitas-jacquenanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-receitas-jacquenanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16ABF4B2BC737C6A408716193820842F /* Pods-receitas-jacquenanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenanTests.modulemap"; sourceTree = "<group>"; };
+		17957C81645DD3787CFDEB1EFEB63F58 /* Pods-receitas-jacquenan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-receitas-jacquenan-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E9B8E3D6CF4A686D811C6AB51CF218A /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F70E57689C2A0C32591016F8A205836 /* Pods-receitas-jacquenan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-receitas-jacquenan-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3FAF00C622F4C634964DC1A02DFEAE52 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADD302D6D3AA6A8D10D61283ADF8C62 /* Pods-receitas-jacquenanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		602E2BA8778429DF62C1168AC94B86EA /* Pods-receitas-jacquenanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenanTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6AC395BBE27555459451A72481A54313 /* Pods-receitas-jacquenan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-Info.plist"; sourceTree = "<group>"; };
+		6DC34604670728B94D261566055DC803 /* Pods-receitas-jacquenanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenanTests.release.xcconfig"; sourceTree = "<group>"; };
+		782318C49FB3EDC8AF33763490AE15E8 /* Pods-receitas-jacquenan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenan.debug.xcconfig"; sourceTree = "<group>"; };
+		7BF64BE8A593C6088B38EE2A69529127 /* Pods-receitas-jacquenan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-acknowledgements.plist"; sourceTree = "<group>"; };
+		88D2E6EA557C162AC9203815024CF504 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		8B8BDB6910F0D181959D732434CCBEE2 /* Pods-receitas-jacquenanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenanTests-umbrella.h"; sourceTree = "<group>"; };
+		96E9A0113AF4C05B2D0908934E9B61AA /* Pods-receitas-jacquenan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenan.modulemap"; sourceTree = "<group>"; };
+		98F6DB2B32E0DA24633F8C3A33A9AE50 /* Pods_receitas_jacquenan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenan.framework; path = "Pods-receitas-jacquenan.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EF1A03A9DA9AD45B0EFFCCE49E488D5 /* Pods-receitas-jacquenanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenanTests-Info.plist"; sourceTree = "<group>"; };
+		A03EEA371066F851F09FEF56F320C333 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap"; sourceTree = "<group>"; };
+		A3A26F8D7D8F3ABAF8DE86F4BDB7C695 /* Pods-receitas-jacquenanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-receitas-jacquenanTests-dummy.m"; sourceTree = "<group>"; };
+		AE068C8267A2E41688469833C4B50934 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m"; sourceTree = "<group>"; };
+		C7388CA01A6FC26FE0DC75DD1B8CCCA2 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist"; sourceTree = "<group>"; };
+		CECAB529F53C1A5955772384D83FCC72 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9790AE0C6E207D28F3386A5C3A38540 /* Pods-receitas-jacquenan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenan-umbrella.h"; sourceTree = "<group>"; };
+		EE6FC26386B726482AB9FF53EF64FDDC /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h"; sourceTree = "<group>"; };
+		F3588E04C5AA5AAD99C31FE5BCBCB67E /* Pods-receitas-jacquenan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenan.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0F17485B7C2E9DCA73EF7ED06F29DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA1A2F3C33E6856D6D0CBF54C42369BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF5AAB3D2580B999FCBAE66B0D64296 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4721293146AD7D8F95B3BC59FF154D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D7F8888C4AAC4ED6F66FC84321484A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D44F4E4A0F923C158294A5BCF19904C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D7DF462B4CE2EE6EF64C0CFF5ADB84A /* Pods-receitas-jacquenanTests */ = {
+			isa = PBXGroup;
+			children = (
+				16ABF4B2BC737C6A408716193820842F /* Pods-receitas-jacquenanTests.modulemap */,
+				124F9BD6452E6EE78FE8BBBA0C182560 /* Pods-receitas-jacquenanTests-acknowledgements.markdown */,
+				602E2BA8778429DF62C1168AC94B86EA /* Pods-receitas-jacquenanTests-acknowledgements.plist */,
+				A3A26F8D7D8F3ABAF8DE86F4BDB7C695 /* Pods-receitas-jacquenanTests-dummy.m */,
+				9EF1A03A9DA9AD45B0EFFCCE49E488D5 /* Pods-receitas-jacquenanTests-Info.plist */,
+				8B8BDB6910F0D181959D732434CCBEE2 /* Pods-receitas-jacquenanTests-umbrella.h */,
+				5ADD302D6D3AA6A8D10D61283ADF8C62 /* Pods-receitas-jacquenanTests.debug.xcconfig */,
+				6DC34604670728B94D261566055DC803 /* Pods-receitas-jacquenanTests.release.xcconfig */,
+			);
+			name = "Pods-receitas-jacquenanTests";
+			path = "Target Support Files/Pods-receitas-jacquenanTests";
+			sourceTree = "<group>";
+		};
+		651E6A78A055C1EF13163932A5FC409C /* Pods-receitas-jacquenan-receitas-jacquenanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A03EEA371066F851F09FEF56F320C333 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap */,
+				88D2E6EA557C162AC9203815024CF504 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.markdown */,
+				0D79513B80AC2A8EE5D46ECE855052E1 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.plist */,
+				AE068C8267A2E41688469833C4B50934 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m */,
+				C7388CA01A6FC26FE0DC75DD1B8CCCA2 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist */,
+				EE6FC26386B726482AB9FF53EF64FDDC /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h */,
+				3FAF00C622F4C634964DC1A02DFEAE52 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */,
+				1E9B8E3D6CF4A686D811C6AB51CF218A /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */,
+			);
+			name = "Pods-receitas-jacquenan-receitas-jacquenanUITests";
+			path = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests";
+			sourceTree = "<group>";
+		};
+		8466155EB2FA4BB99DEEFBD7C9DCA2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98F6DB2B32E0DA24633F8C3A33A9AE50 /* Pods_receitas_jacquenan.framework */,
+				CECAB529F53C1A5955772384D83FCC72 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */,
+				0DC721F7F98D1417125975E380933D68 /* Pods_receitas_jacquenanTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		AA4B87900BF96389FA841B211F77DC78 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E743F67D15FAFF003DBF49FE949C6 /* Pods-receitas-jacquenan */,
+				651E6A78A055C1EF13163932A5FC409C /* Pods-receitas-jacquenan-receitas-jacquenanUITests */,
+				3D7DF462B4CE2EE6EF64C0CFF5ADB84A /* Pods-receitas-jacquenanTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CD3E743F67D15FAFF003DBF49FE949C6 /* Pods-receitas-jacquenan */ = {
+			isa = PBXGroup;
+			children = (
+				96E9A0113AF4C05B2D0908934E9B61AA /* Pods-receitas-jacquenan.modulemap */,
+				17957C81645DD3787CFDEB1EFEB63F58 /* Pods-receitas-jacquenan-acknowledgements.markdown */,
+				7BF64BE8A593C6088B38EE2A69529127 /* Pods-receitas-jacquenan-acknowledgements.plist */,
+				2F70E57689C2A0C32591016F8A205836 /* Pods-receitas-jacquenan-dummy.m */,
+				6AC395BBE27555459451A72481A54313 /* Pods-receitas-jacquenan-Info.plist */,
+				D9790AE0C6E207D28F3386A5C3A38540 /* Pods-receitas-jacquenan-umbrella.h */,
+				782318C49FB3EDC8AF33763490AE15E8 /* Pods-receitas-jacquenan.debug.xcconfig */,
+				F3588E04C5AA5AAD99C31FE5BCBCB67E /* Pods-receitas-jacquenan.release.xcconfig */,
+			);
+			name = "Pods-receitas-jacquenan";
+			path = "Target Support Files/Pods-receitas-jacquenan";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				8466155EB2FA4BB99DEEFBD7C9DCA2CC /* Products */,
+				AA4B87900BF96389FA841B211F77DC78 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07F46EA23021D2E23F6A5CCBF3F719F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC9D78C0482309BF273BFA10E0F9076 /* Pods-receitas-jacquenanTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59B036E293D4B84596369619720F2605 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE10584C0C91DE8B1B55B1A3AFB87643 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCCC82ADF687D45ED4A33AA72EF050C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				339FFF67363B3C3B9E18FE47BD172A2F /* Pods-receitas-jacquenan-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10676206435CE8405373F4C000A1C964 /* Pods-receitas-jacquenanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DB78086D26A78E91D243533B3D1AF6 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenanTests" */;
+			buildPhases = (
+				07F46EA23021D2E23F6A5CCBF3F719F8 /* Headers */,
+				DC33490D7F10B0A53EA89C6DB71268A2 /* Sources */,
+				1A0F17485B7C2E9DCA73EF7ED06F29DF /* Frameworks */,
+				5AE4FEF80A6A680A6E37B81C3AC8A365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91FD3077237ADC47D2BEC0818DBC989 /* PBXTargetDependency */,
+			);
+			name = "Pods-receitas-jacquenanTests";
+			productName = "Pods-receitas-jacquenanTests";
+			productReference = 0DC721F7F98D1417125975E380933D68 /* Pods_receitas_jacquenanTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2D4B53AC559E466DC0C548F168954037 /* Pods-receitas-jacquenan-receitas-jacquenanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D2494B12CF1AA9C053F11E87638C74 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenan-receitas-jacquenanUITests" */;
+			buildPhases = (
+				59B036E293D4B84596369619720F2605 /* Headers */,
+				3137B7D2A1C572C4556E4691110B7997 /* Sources */,
+				A4D7F8888C4AAC4ED6F66FC84321484A /* Frameworks */,
+				89706C91640CA97C66BB4092D4BD1E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157D9A507A05E32224152CA1F136E150 /* PBXTargetDependency */,
+			);
+			name = "Pods-receitas-jacquenan-receitas-jacquenanUITests";
+			productName = "Pods-receitas-jacquenan-receitas-jacquenanUITests";
+			productReference = CECAB529F53C1A5955772384D83FCC72 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8918522B7FE00BABAF7FA7D79BD621F4 /* Pods-receitas-jacquenan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57506EF1A968609E4F24F96A39AE18C6 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenan" */;
+			buildPhases = (
+				ECCCC82ADF687D45ED4A33AA72EF050C /* Headers */,
+				D015E94460678F02E902D058E35B26AB /* Sources */,
+				9FF5AAB3D2580B999FCBAE66B0D64296 /* Frameworks */,
+				AD8E969168DD6DB86DF47FDEB16B414E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D55881F9873642AD065EE7596E711AEF /* PBXTargetDependency */,
+			);
+			name = "Pods-receitas-jacquenan";
+			productName = "Pods-receitas-jacquenan";
+			productReference = 98F6DB2B32E0DA24633F8C3A33A9AE50 /* Pods_receitas_jacquenan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8466155EB2FA4BB99DEEFBD7C9DCA2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8918522B7FE00BABAF7FA7D79BD621F4 /* Pods-receitas-jacquenan */,
+				2D4B53AC559E466DC0C548F168954037 /* Pods-receitas-jacquenan-receitas-jacquenanUITests */,
+				10676206435CE8405373F4C000A1C964 /* Pods-receitas-jacquenanTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AE4FEF80A6A680A6E37B81C3AC8A365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89706C91640CA97C66BB4092D4BD1E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD8E969168DD6DB86DF47FDEB16B414E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3137B7D2A1C572C4556E4691110B7997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E20360F9D14C2C1255958932FB5136 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D015E94460678F02E902D058E35B26AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB382A8628B247430B61D35CFF8B4C12 /* Pods-receitas-jacquenan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC33490D7F10B0A53EA89C6DB71268A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76ECC7EB954CC33F4FF5E7E900C28B4 /* Pods-receitas-jacquenanTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157D9A507A05E32224152CA1F136E150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 4FC9FFEB8A533092B536B79AC446DBBC /* PBXContainerItemProxy */;
+		};
+		C91FD3077237ADC47D2BEC0818DBC989 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-receitas-jacquenan";
+			target = 8918522B7FE00BABAF7FA7D79BD621F4 /* Pods-receitas-jacquenan */;
+			targetProxy = D27C90141697A665373D4CCF87D64DF7 /* PBXContainerItemProxy */;
+		};
+		D55881F9873642AD065EE7596E711AEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 740A5AFA8D50FE3E94DF485E9CEF3E08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1E11A42A3CD1057DF09276D5381987D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADD302D6D3AA6A8D10D61283ADF8C62 /* Pods-receitas-jacquenanTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D98D90EF5DD79D6FBE6B9FD3B2917A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3588E04C5AA5AAD99C31FE5BCBCB67E /* Pods-receitas-jacquenan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8917FECFB792EBD18ACB85A4ED101AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAF00C622F4C634964DC1A02DFEAE52 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6F1FFFA100606B10C8FB7B7B89E00E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9B8E3D6CF4A686D811C6AB51CF218A /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE818B4B7B9AC9B9957E02C771BF1DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC34604670728B94D261566055DC803 /* Pods-receitas-jacquenanTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFAD5F83F03E520E4B67926A895207F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782318C49FB3EDC8AF33763490AE15E8 /* Pods-receitas-jacquenan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57506EF1A968609E4F24F96A39AE18C6 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFAD5F83F03E520E4B67926A895207F /* Debug */,
+				7D98D90EF5DD79D6FBE6B9FD3B2917A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6DB78086D26A78E91D243533B3D1AF6 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E11A42A3CD1057DF09276D5381987D4 /* Debug */,
+				BE818B4B7B9AC9B9957E02C771BF1DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEED47E09AF743F48544C1C4FEADEF47 /* Debug */,
+				84D7C4574E8F0F3095623F0E06F5B402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D2494B12CF1AA9C053F11E87638C74 /* Build configuration list for PBXNativeTarget "Pods-receitas-jacquenan-receitas-jacquenanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8917FECFB792EBD18ACB85A4ED101AD8 /* Debug */,
+				A6F1FFFA100606B10C8FB7B7B89E00E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
