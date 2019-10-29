@@ -1,5 +1,5 @@
 ---
-name: Template de Issua
+name: Template de Issue
 about: Descreva uma issue encontrada.
 title: Problema encontrado
 labels: ''
