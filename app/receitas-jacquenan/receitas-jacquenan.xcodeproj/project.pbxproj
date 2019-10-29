@@ -15,6 +15,9 @@
 		1736EFE623687394007A2B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1736EFE423687394007A2B88 /* LaunchScreen.storyboard */; };
 		1736EFF123687394007A2B88 /* receitas_jacquenanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFF023687394007A2B88 /* receitas_jacquenanTests.swift */; };
 		1736EFFC23687395007A2B88 /* receitas_jacquenanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFFB23687395007A2B88 /* receitas_jacquenanUITests.swift */; };
+		22310B193F7E8BDAD60F0CE8 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */; };
+		51B6EBB7F2888FC6DF89E590 /* Pods_receitas_jacquenan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */; };
+		AE89786BFF8F939491B1111D /* Pods_receitas_jacquenanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		1736EFF723687394007A2B88 /* receitas-jacquenanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "receitas-jacquenanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1736EFFB23687395007A2B88 /* receitas_jacquenanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receitas_jacquenanUITests.swift; sourceTree = "<group>"; };
 		1736EFFD23687395007A2B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247EC5F366D649BFA0AB32F2 /* Pods-receitas-jacquenanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.release.xcconfig"; sourceTree = "<group>"; };
+		248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.release.xcconfig"; sourceTree = "<group>"; };
+		3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467AE5B3D4B2FB4F12E98B1C /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB704C6D13C860D60E613D9 /* Pods-receitas-jacquenan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.debug.xcconfig"; sourceTree = "<group>"; };
+		A827672ABD477458F3FF4CB7 /* Pods-receitas-jacquenanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF138A9348F08EE13D6DEFFE /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B6EBB7F2888FC6DF89E590 /* Pods_receitas_jacquenan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE89786BFF8F939491B1111D /* Pods_receitas_jacquenanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22310B193F7E8BDAD60F0CE8 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				1736EFEF23687394007A2B88 /* receitas-jacquenanTests */,
 				1736EFFA23687394007A2B88 /* receitas-jacquenanUITests */,
 				1736EFD723687394007A2B88 /* Products */,
+				CAA09D7E35EC9AE125A9FD3D /* Pods */,
+				B5582B01C97F44CC2308860D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,29 @@
 			path = "receitas-jacquenanUITests";
 			sourceTree = "<group>";
 		};
+		B5582B01C97F44CC2308860D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */,
+				3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */,
+				498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA09D7E35EC9AE125A9FD3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB704C6D13C860D60E613D9 /* Pods-receitas-jacquenan.debug.xcconfig */,
+				248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */,
+				BF138A9348F08EE13D6DEFFE /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */,
+				467AE5B3D4B2FB4F12E98B1C /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */,
+				A827672ABD477458F3FF4CB7 /* Pods-receitas-jacquenanTests.debug.xcconfig */,
+				247EC5F366D649BFA0AB32F2 /* Pods-receitas-jacquenanTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1736F00023687395007A2B88 /* Build configuration list for PBXNativeTarget "receitas-jacquenan" */;
 			buildPhases = (
+				34FF127AFAFB062392611DC2 /* [CP] Check Pods Manifest.lock */,
 				1736EFD223687394007A2B88 /* Sources */,
 				1736EFD323687394007A2B88 /* Frameworks */,
 				1736EFD423687394007A2B88 /* Resources */,
+				1736F0092368746E007A2B88 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -160,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1736F00323687395007A2B88 /* Build configuration list for PBXNativeTarget "receitas-jacquenanTests" */;
 			buildPhases = (
+				090FDD114F11CD7FE98A657C /* [CP] Check Pods Manifest.lock */,
 				1736EFE823687394007A2B88 /* Sources */,
 				1736EFE923687394007A2B88 /* Frameworks */,
 				1736EFEA23687394007A2B88 /* Resources */,
@@ -178,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1736F00623687395007A2B88 /* Build configuration list for PBXNativeTarget "receitas-jacquenanUITests" */;
 			buildPhases = (
+				C5943DADC47517CFAB3157BA /* [CP] Check Pods Manifest.lock */,
 				1736EFF323687394007A2B88 /* Sources */,
 				1736EFF423687394007A2B88 /* Frameworks */,
 				1736EFF523687394007A2B88 /* Resources */,
@@ -261,6 +305,93 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		090FDD114F11CD7FE98A657C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-receitas-jacquenanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1736F0092368746E007A2B88 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		34FF127AFAFB062392611DC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-receitas-jacquenan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5943DADC47517CFAB3157BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-receitas-jacquenan-receitas-jacquenanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1736EFD223687394007A2B88 /* Sources */ = {
@@ -432,6 +563,7 @@
 		};
 		1736F00123687395007A2B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB704C6D13C860D60E613D9 /* Pods-receitas-jacquenan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +584,7 @@
 		};
 		1736F00223687395007A2B88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +605,7 @@
 		};
 		1736F00423687395007A2B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A827672ABD477458F3FF4CB7 /* Pods-receitas-jacquenanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +628,7 @@
 		};
 		1736F00523687395007A2B88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247EC5F366D649BFA0AB32F2 /* Pods-receitas-jacquenanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +651,7 @@
 		};
 		1736F00723687395007A2B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF138A9348F08EE13D6DEFFE /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +672,7 @@
 		};
 		1736F00823687395007A2B88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467AE5B3D4B2FB4F12E98B1C /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
