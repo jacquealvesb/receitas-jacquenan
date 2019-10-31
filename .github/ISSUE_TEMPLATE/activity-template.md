@@ -11,15 +11,15 @@ assignees: ''
 [Descrição detalhada do que a atividade deve implementar]
 
 ## Dificuldade:
-__Dificuldade da ativisade de acordo com o escopo da sprint__
+__Dificuldade da atividade de acordo com o escopo da sprint__
 
-* Baixa:
-* Média:
-* Alta:
+- [ ] Baixa
+- [ ] Média
+- [ ] Alta
 
 ## Prioridade:
 __Prioridade da atividade de acordo com o escopo da sprint__
 
-* Baixa:
-* Média:
-* Alta:
+- [ ] Baixa
+- [ ] Média
+- [ ] Alta
