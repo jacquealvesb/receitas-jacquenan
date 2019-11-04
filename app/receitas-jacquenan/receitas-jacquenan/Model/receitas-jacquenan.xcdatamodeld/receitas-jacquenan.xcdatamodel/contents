@@ -11,6 +11,7 @@
         <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Recipe" inverseName="instructions" inverseEntity="Recipe"/>
     </entity>
     <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="current" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="finished" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -21,6 +22,6 @@
     <elements>
         <element name="Ingredient" positionX="-63" positionY="-18" width="128" height="88"/>
         <element name="Instruction" positionX="-54" positionY="9" width="128" height="88"/>
-        <element name="Recipe" positionX="-36" positionY="27" width="128" height="133"/>
+        <element name="Recipe" positionX="-36" positionY="27" width="128" height="148"/>
     </elements>
 </model>
