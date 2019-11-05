@@ -12,7 +12,7 @@ def parse(html):
 		html {String} -- a giant string of the page source
 	'''
 
-	soup = bs(html)
+	soup = bs(html, 'lxml')
 
 	# Gets ingredients
 	ingredients = []
@@ -42,7 +42,11 @@ def getRecipe():
 		req = requests.get(recipe)
 		(ingredients, instructions, thumbnail) = parse(req.content)
 		
-		return {}
+		return {
+		'ingredients': ingredients,
+		'instructions': instructions,
+		'thumbnail': thumbnail
+		}
 	except requests.exceptions.URLRequired as exception:
 		raise(exception)
 
