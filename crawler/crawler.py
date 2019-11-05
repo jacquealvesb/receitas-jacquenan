@@ -10,6 +10,9 @@ def parse(html):
 	
 	Arguments:
 		html {String} -- a giant string of the page source
+
+	Return:
+		results {triplet} -- a tiplet consisting of ingredients,instructions, and recipe's thimbnail
 	'''
 
 	soup = bs(html, 'lxml')
