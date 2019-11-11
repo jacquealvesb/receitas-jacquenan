@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */; };
+		170867B12370EC31005215E9 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170867B02370EC31005215E9 /* IntentHandler.swift */; };
+		170867B52370EC31005215E9 /* RecipesIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 170867AE2370EC31005215E9 /* RecipesIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1728F24F237450D600DE02F4 /* IngredientAmountIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728F24E237450D600DE02F4 /* IngredientAmountIntentHandler.swift */; };
+		17317691237992E000D2E321 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 17317694237992E000D2E321 /* Intents.intentdefinition */; };
+		17317692237992E000D2E321 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 17317694237992E000D2E321 /* Intents.intentdefinition */; };
+		1731769823799AD000D2E321 /* RepeatInstructionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731769723799AD000D2E321 /* RepeatInstructionIntentHandler.swift */; };
 		1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFD923687394007A2B88 /* AppDelegate.swift */; };
 		1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFDB23687394007A2B88 /* SceneDelegate.swift */; };
 		1736EFDE23687394007A2B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFDD23687394007A2B88 /* ContentView.swift */; };
@@ -16,12 +22,20 @@
 		1736EFE623687394007A2B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1736EFE423687394007A2B88 /* LaunchScreen.storyboard */; };
 		1736EFF123687394007A2B88 /* receitas_jacquenanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFF023687394007A2B88 /* receitas_jacquenanTests.swift */; };
 		1736EFFC23687395007A2B88 /* receitas_jacquenanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFFB23687395007A2B88 /* receitas_jacquenanUITests.swift */; };
+		17B6B08823799E3500E8C782 /* NextInstructionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */; };
 		22310B193F7E8BDAD60F0CE8 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */; };
 		51B6EBB7F2888FC6DF89E590 /* Pods_receitas_jacquenan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */; };
 		AE89786BFF8F939491B1111D /* Pods_receitas_jacquenanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		170867B32370EC31005215E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1736EFCE23687394007A2B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 170867AD2370EC31005215E9;
+			remoteInfo = RecipesIntents;
+		};
 		1736EFED23687394007A2B88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1736EFCE23687394007A2B88 /* Project object */;
@@ -38,8 +52,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		170867B92370EC31005215E9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				170867B52370EC31005215E9 /* RecipesIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		171DEBFE23704A180093C191 /* receitas-jacquenan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "receitas-jacquenan.xcdatamodel"; sourceTree = "<group>"; };
+		170867A92370EBD3005215E9 /* receitas-jacquenan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "receitas-jacquenan.entitlements"; sourceTree = "<group>"; };
+		170867AE2370EC31005215E9 /* RecipesIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RecipesIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		170867B02370EC31005215E9 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		170867B22370EC31005215E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1728F24E237450D600DE02F4 /* IngredientAmountIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientAmountIntentHandler.swift; sourceTree = "<group>"; };
+		17317693237992E000D2E321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
+		1731769723799AD000D2E321 /* RepeatInstructionIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatInstructionIntentHandler.swift; sourceTree = "<group>"; };
 		1736EFD623687394007A2B88 /* receitas-jacquenan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "receitas-jacquenan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1736EFD923687394007A2B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1736EFDB23687394007A2B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +89,8 @@
 		1736EFF723687394007A2B88 /* receitas-jacquenanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "receitas-jacquenanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1736EFFB23687395007A2B88 /* receitas_jacquenanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receitas_jacquenanUITests.swift; sourceTree = "<group>"; };
 		1736EFFD23687395007A2B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextInstructionIntentHandler.swift; sourceTree = "<group>"; };
+		17B6B08A2379A38E00E8C782 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Intents.strings"; sourceTree = "<group>"; };
 		247EC5F366D649BFA0AB32F2 /* Pods-receitas-jacquenanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.release.xcconfig"; sourceTree = "<group>"; };
 		248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.release.xcconfig"; sourceTree = "<group>"; };
 		3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		170867AB2370EC31005215E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1736EFD323687394007A2B88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,12 +145,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		170867AF2370EC31005215E9 /* RecipesIntents */ = {
+			isa = PBXGroup;
+			children = (
+				170867B02370EC31005215E9 /* IntentHandler.swift */,
+				1728F24E237450D600DE02F4 /* IngredientAmountIntentHandler.swift */,
+				1731769723799AD000D2E321 /* RepeatInstructionIntentHandler.swift */,
+				17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */,
+				170867B22370EC31005215E9 /* Info.plist */,
+			);
+			path = RecipesIntents;
+			sourceTree = "<group>";
+		};
+		1728F24823744FCE00DE02F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17317694237992E000D2E321 /* Intents.intentdefinition */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		1736EFCD23687394007A2B88 = {
 			isa = PBXGroup;
 			children = (
 				1736EFD823687394007A2B88 /* receitas-jacquenan */,
 				1736EFEF23687394007A2B88 /* receitas-jacquenanTests */,
 				1736EFFA23687394007A2B88 /* receitas-jacquenanUITests */,
+				170867AF2370EC31005215E9 /* RecipesIntents */,
 				1736EFD723687394007A2B88 /* Products */,
 				CAA09D7E35EC9AE125A9FD3D /* Pods */,
 				B5582B01C97F44CC2308860D /* Frameworks */,
@@ -119,6 +184,7 @@
 				1736EFD623687394007A2B88 /* receitas-jacquenan.app */,
 				1736EFEC23687394007A2B88 /* receitas-jacquenanTests.xctest */,
 				1736EFF723687394007A2B88 /* receitas-jacquenanUITests.xctest */,
+				170867AE2370EC31005215E9 /* RecipesIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				171DEBBD237049D30093C191 /* Model */,
+				1728F24823744FCE00DE02F4 /* Support Files */,
+				170867A92370EBD3005215E9 /* receitas-jacquenan.entitlements */,
 				1736EFD923687394007A2B88 /* AppDelegate.swift */,
 				1736EFDB23687394007A2B88 /* SceneDelegate.swift */,
 				1736EFDD23687394007A2B88 /* ContentView.swift */,
@@ -190,6 +258,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		170867AD2370EC31005215E9 /* RecipesIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 170867B62370EC31005215E9 /* Build configuration list for PBXNativeTarget "RecipesIntents" */;
+			buildPhases = (
+				170867AA2370EC31005215E9 /* Sources */,
+				170867AB2370EC31005215E9 /* Frameworks */,
+				170867AC2370EC31005215E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipesIntents;
+			productName = RecipesIntents;
+			productReference = 170867AE2370EC31005215E9 /* RecipesIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1736EFD523687394007A2B88 /* receitas-jacquenan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1736F00023687395007A2B88 /* Build configuration list for PBXNativeTarget "receitas-jacquenan" */;
@@ -199,10 +284,12 @@
 				1736EFD323687394007A2B88 /* Frameworks */,
 				1736EFD423687394007A2B88 /* Resources */,
 				1736F0092368746E007A2B88 /* SwiftLint */,
+				170867B92370EC31005215E9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				170867B42370EC31005215E9 /* PBXTargetDependency */,
 			);
 			name = "receitas-jacquenan";
 			productName = "receitas-jacquenan";
@@ -253,10 +340,13 @@
 		1736EFCE23687394007A2B88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = jacquenan;
 				TargetAttributes = {
+					170867AD2370EC31005215E9 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					1736EFD523687394007A2B88 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -277,6 +367,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 1736EFCD23687394007A2B88;
 			productRefGroup = 1736EFD723687394007A2B88 /* Products */;
@@ -286,11 +377,19 @@
 				1736EFD523687394007A2B88 /* receitas-jacquenan */,
 				1736EFEB23687394007A2B88 /* receitas-jacquenanTests */,
 				1736EFF623687394007A2B88 /* receitas-jacquenanUITests */,
+				170867AD2370EC31005215E9 /* RecipesIntents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		170867AC2370EC31005215E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1736EFD423687394007A2B88 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +504,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		170867AA2370EC31005215E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17317692237992E000D2E321 /* Intents.intentdefinition in Sources */,
+				170867B12370EC31005215E9 /* IntentHandler.swift in Sources */,
+				1731769823799AD000D2E321 /* RepeatInstructionIntentHandler.swift in Sources */,
+				1728F24F237450D600DE02F4 /* IngredientAmountIntentHandler.swift in Sources */,
+				17B6B08823799E3500E8C782 /* NextInstructionIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1736EFD223687394007A2B88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +523,7 @@
 				1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */,
 				1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */,
 				171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */,
+				17F79D04237452AD0042ED22 /* Intents.intentdefinition in Sources */,
 				1736EFDE23687394007A2B88 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +547,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		170867B42370EC31005215E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 170867AD2370EC31005215E9 /* RecipesIntents */;
+			targetProxy = 170867B32370EC31005215E9 /* PBXContainerItemProxy */;
+		};
 		1736EFEE23687394007A2B88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1736EFD523687394007A2B88 /* receitas-jacquenan */;
@@ -448,6 +565,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		17317694237992E000D2E321 /* Intents.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17317693237992E000D2E321 /* Base */,
+				17B6B08A2379A38E00E8C782 /* pt-BR */,
+			);
+			name = Intents.intentdefinition;
+			sourceTree = "<group>";
+		};
 		1736EFE423687394007A2B88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -459,6 +585,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		170867B72370EC31005215E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9554U789HP;
+				INFOPLIST_FILE = RecipesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jacquenan.receitas-jacquenan.RecipesIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		170867B82370EC31005215E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9554U789HP;
+				INFOPLIST_FILE = RecipesIntents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jacquenan.receitas-jacquenan.RecipesIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1736EFFE23687395007A2B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,6 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -563,6 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INTENTS_CODEGEN_LANGUAGE = Swift;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -577,7 +745,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EB704C6D13C860D60E613D9 /* Pods-receitas-jacquenan.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "receitas-jacquenan/receitas-jacquenan.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"receitas-jacquenan/Preview Content\"";
 				DEVELOPMENT_TEAM = 9554U789HP;
@@ -598,7 +768,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "receitas-jacquenan/receitas-jacquenan.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"receitas-jacquenan/Preview Content\"";
 				DEVELOPMENT_TEAM = 9554U789HP;
@@ -706,6 +878,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		170867B62370EC31005215E9 /* Build configuration list for PBXNativeTarget "RecipesIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170867B72370EC31005215E9 /* Debug */,
+				170867B82370EC31005215E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1736EFD123687394007A2B88 /* Build configuration list for PBXProject "receitas-jacquenan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
