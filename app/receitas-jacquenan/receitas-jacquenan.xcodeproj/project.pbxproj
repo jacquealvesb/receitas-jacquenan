@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */; };
 		1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFD923687394007A2B88 /* AppDelegate.swift */; };
 		1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFDB23687394007A2B88 /* SceneDelegate.swift */; };
 		1736EFDE23687394007A2B88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736EFDD23687394007A2B88 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171DEBFE23704A180093C191 /* receitas-jacquenan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "receitas-jacquenan.xcdatamodel"; sourceTree = "<group>"; };
 		1736EFD623687394007A2B88 /* receitas-jacquenan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "receitas-jacquenan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1736EFD923687394007A2B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1736EFDB23687394007A2B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171DEBBD237049D30093C191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1736EFCD23687394007A2B88 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		1736EFD823687394007A2B88 /* receitas-jacquenan */ = {
 			isa = PBXGroup;
 			children = (
+				171DEBBD237049D30093C191 /* Model */,
 				1736EFD923687394007A2B88 /* AppDelegate.swift */,
 				1736EFDB23687394007A2B88 /* SceneDelegate.swift */,
 				1736EFDD23687394007A2B88 /* ContentView.swift */,
@@ -400,6 +411,7 @@
 			files = (
 				1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */,
 				1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */,
+				171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */,
 				1736EFDE23687394007A2B88 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +743,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				171DEBFE23704A180093C191 /* receitas-jacquenan.xcdatamodel */,
+			);
+			currentVersion = 171DEBFE23704A180093C191 /* receitas-jacquenan.xcdatamodel */;
+			path = "receitas-jacquenan.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1736EFCE23687394007A2B88 /* Project object */;
 }
