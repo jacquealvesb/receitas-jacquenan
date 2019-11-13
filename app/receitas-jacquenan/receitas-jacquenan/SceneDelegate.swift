@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import Intents
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,6 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
+        // Donate interactions
+        self.donateIngredientAmountIntent()
+        self.donateRepeatInstructionIntent()
+        self.donateNextInstructionIntent()
+        
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 
@@ -56,5 +62,60 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+}
+
+// MARK: - Interaction donations
+//
+// To be added to Siri Shortcut, an intent has to already been used before, so we donate the intent in order to do that
+//
+extension SceneDelegate {
+    func donateIngredientAmountIntent() {
+        let intent = IngredientAmountIntent()
+        
+        intent.suggestedInvocationPhrase = "How much do I put?"
+        intent.ingredient = "ingredient"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { error in
+            if let error = error as NSError? {
+                print("Interaction donation failed: \(error.description)")
+            } else {
+                print("Successfully donated interaction")
+            }
+        }
+    }
+    
+    func donateRepeatInstructionIntent() {
+        let intent = RepeatInstructionIntent()
+        
+        intent.suggestedInvocationPhrase = "Repeat instruction"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { error in
+            if let error = error as NSError? {
+                print("Interaction donation failed: \(error.description)")
+            } else {
+                print("Successfully donated interaction")
+            }
+        }
+    }
+    
+    func donateNextInstructionIntent() {
+        let intent = NextInstructionIntent()
+        
+        intent.suggestedInvocationPhrase = "Next instruction"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { error in
+            if let error = error as NSError? {
+                print("Interaction donation failed: \(error.description)")
+            } else {
+                print("Successfully donated interaction")
+            }
+        }
     }
 }

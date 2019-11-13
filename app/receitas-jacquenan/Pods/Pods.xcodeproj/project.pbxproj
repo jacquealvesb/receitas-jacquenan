@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -56,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		0D79513B80AC2A8EE5D46ECE855052E1 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0DC721F7F98D1417125975E380933D68 /* Pods_receitas_jacquenanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenanTests.framework; path = "Pods-receitas-jacquenanTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC721F7F98D1417125975E380933D68 /* Pods_receitas_jacquenanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F9BD6452E6EE78FE8BBBA0C182560 /* Pods-receitas-jacquenanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-receitas-jacquenanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		16ABF4B2BC737C6A408716193820842F /* Pods-receitas-jacquenanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenanTests.modulemap"; sourceTree = "<group>"; };
 		17957C81645DD3787CFDEB1EFEB63F58 /* Pods-receitas-jacquenan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-receitas-jacquenan-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -74,14 +75,14 @@
 		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
 		8B8BDB6910F0D181959D732434CCBEE2 /* Pods-receitas-jacquenanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenanTests-umbrella.h"; sourceTree = "<group>"; };
 		96E9A0113AF4C05B2D0908934E9B61AA /* Pods-receitas-jacquenan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenan.modulemap"; sourceTree = "<group>"; };
-		98F6DB2B32E0DA24633F8C3A33A9AE50 /* Pods_receitas_jacquenan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenan.framework; path = "Pods-receitas-jacquenan.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98F6DB2B32E0DA24633F8C3A33A9AE50 /* Pods_receitas_jacquenan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EF1A03A9DA9AD45B0EFFCCE49E488D5 /* Pods-receitas-jacquenanTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenanTests-Info.plist"; sourceTree = "<group>"; };
 		A03EEA371066F851F09FEF56F320C333 /* Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.modulemap"; sourceTree = "<group>"; };
 		A3A26F8D7D8F3ABAF8DE86F4BDB7C695 /* Pods-receitas-jacquenanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-receitas-jacquenanTests-dummy.m"; sourceTree = "<group>"; };
 		AE068C8267A2E41688469833C4B50934 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-dummy.m"; sourceTree = "<group>"; };
 		C7388CA01A6FC26FE0DC75DD1B8CCCA2 /* Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-Info.plist"; sourceTree = "<group>"; };
-		CECAB529F53C1A5955772384D83FCC72 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECAB529F53C1A5955772384D83FCC72 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9790AE0C6E207D28F3386A5C3A38540 /* Pods-receitas-jacquenan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenan-umbrella.h"; sourceTree = "<group>"; };
 		EE6FC26386B726482AB9FF53EF64FDDC /* Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h"; sourceTree = "<group>"; };
 		F3588E04C5AA5AAD99C31FE5BCBCB67E /* Pods-receitas-jacquenan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-receitas-jacquenan.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +171,6 @@
 			children = (
 				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -338,6 +338,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 8466155EB2FA4BB99DEEFBD7C9DCA2CC /* Products */;
