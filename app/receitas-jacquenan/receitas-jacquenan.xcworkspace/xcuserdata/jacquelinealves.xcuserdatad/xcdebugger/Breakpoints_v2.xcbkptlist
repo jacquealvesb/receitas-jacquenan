@@ -3,4 +3,102 @@
    uuid = "7DB3582B-B761-4EB8-9580-BE3EB7BB1611"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA88FD68-CFCD-4A4A-B298-E16583FED60A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "receitas-jacquenan/Service/CoreDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B31E343-13B5-4F51-A3FF-96AC3FC669A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "receitas-jacquenan/Service/CoreDataService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B31E343-13B5-4F51-A3FF-96AC3FC669A3 - 5af71029897f2f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "receitas_jacquenan.CoreDataService.__allocating_init() -&gt; receitas_jacquenan.CoreDataService"
+                  moduleName = "receitas-jacquenan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacquelinealves/Downloads/receitas-jacquenan/app/receitas-jacquenan/receitas-jacquenan/Service/CoreDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "5B31E343-13B5-4F51-A3FF-96AC3FC669A3 - df70e572bc65bf72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.NSPersistentContainer in receitas_jacquenan.CoreDataService.init() -&gt; receitas_jacquenan.CoreDataService"
+                  moduleName = "receitas-jacquenan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jacquelinealves/Downloads/receitas-jacquenan/app/receitas-jacquenan/receitas-jacquenan/Service/CoreDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "10">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7456161-B1F0-4674-A441-C1463F650B7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "receitas-jacquenanCoreDataTests/receitas_jacquenanCoreDataTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "flushData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADC81548-CDA9-4B86-B0E8-146CEAB6ED51"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "receitas-jacquenanCoreDataTests/receitas_jacquenanCoreDataTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "initStubs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
