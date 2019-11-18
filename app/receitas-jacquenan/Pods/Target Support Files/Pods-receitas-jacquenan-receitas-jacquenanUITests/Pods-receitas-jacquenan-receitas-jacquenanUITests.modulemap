@@ -1,6 +1,0 @@
-framework module Pods_receitas_jacquenan_receitas_jacquenanUITests {
-  umbrella header "Pods-receitas-jacquenan-receitas-jacquenanUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

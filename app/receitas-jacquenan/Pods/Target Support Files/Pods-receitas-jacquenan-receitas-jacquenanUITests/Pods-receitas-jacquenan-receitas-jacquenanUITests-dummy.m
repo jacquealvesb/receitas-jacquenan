@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_receitas_jacquenan_receitas_jacquenanUITests : NSObject
-@end
-@implementation PodsDummy_Pods_receitas_jacquenan_receitas_jacquenanUITests
-@end
