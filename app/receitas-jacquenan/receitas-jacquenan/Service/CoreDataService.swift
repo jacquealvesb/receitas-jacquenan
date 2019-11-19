@@ -9,18 +9,15 @@
 import CoreData
 
 class CoreDataService {
+    public static var shared = CoreDataService()
+    
     private var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
     
     var persistentContainer: NSPersistentContainer
     
-    init(container: NSPersistentContainer) {
-        self.persistentContainer = container
-        self.persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
-    }
-    
-    convenience init() {
+    init() {
         let container: NSPersistentContainer = {
             /*
             The persistent container for the application. This implementation
@@ -52,7 +49,7 @@ class CoreDataService {
             return container
         }()
         
-        self.init(container: container)
+        self.persistentContainer = container
     }
     
     // MARK: - Core Data Saving support

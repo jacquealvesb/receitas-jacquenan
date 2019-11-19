@@ -11,46 +11,24 @@ import CoreData
 @testable import receitas_jacquenan
 
 class receitas_jacquenanCoreDataTests: XCTestCase {
-
-    var sut: CoreDataService!
     
-    lazy var managedObjectModel: NSManagedObjectModel = {
-        let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle(for: type(of: self))])!
-        return managedObjectModel
-    }()
-    
-    lazy var mockPersistentContainer: NSPersistentContainer = {
-        
-        let container = NSPersistentContainer(name: "PersistentTestJacquenan", managedObjectModel: self.managedObjectModel)
-        let description = NSPersistentStoreDescription()
-        description.type = NSInMemoryStoreType
-        description.shouldAddStoreAsynchronously = false
-        
-        container.persistentStoreDescriptions = [description]
-        container.loadPersistentStores { (description, error) in
-            
-            // Check if the data store is in memory
-            precondition(description.type == NSInMemoryStoreType)
-            
-            // Check if creating container wrong
-            if let error = error {
-                fatalError("Create an in-memory coordinator failed \(error)")
-            }
-        }
-        
-        return container
-    }()
+    static var persistentContainer: NSPersistentContainer?
     
     var context: NSManagedObjectContext {
-        return mockPersistentContainer.viewContext
+        return receitas_jacquenanCoreDataTests.persistentContainer!.viewContext
     }
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         super.setUp()
+        
+        if receitas_jacquenanCoreDataTests.persistentContainer == nil {
+            receitas_jacquenanCoreDataTests.persistentContainer = self.mockPersistentContainer()
+            
+            CoreDataService.shared.persistentContainer = receitas_jacquenanCoreDataTests.persistentContainer!
+        }
         self.initStubs()
-        sut = CoreDataService(container: mockPersistentContainer)
     }
 
     override func tearDown() {
@@ -62,16 +40,16 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
     // MARK: - Test functions
     func testCreateRecipe() {
         
-        let ingredient = sut.insertIngredient(amount: "500ml", name: "caldo de galinha")
-        let instruction = sut.insertInstruction(instructionContent: "Bota o negocio na coxisa", state: 0)
+        let ingredient = CoreDataService.shared.insertIngredient(amount: "500ml", name: "caldo de galinha")
+        let instruction = CoreDataService.shared.insertInstruction(instructionContent: "Bota o negocio na coxisa", state: 0)
         
-        let recipe = sut.insertRecipe(current: false,
-                                      finished: false,
-                                      image: Data(),
-                                      name: "Bolo de rolo",
-                                      starred: false,
-                                      ingredients: [ingredient],
-                                      instructions: [instruction])
+        let recipe = CoreDataService.shared.insertRecipe(current: false,
+                                                         finished: false,
+                                                         image: Data(),
+                                                         name: "Bolo de rolo",
+                                                         starred: false,
+                                                         ingredients: [ingredient],
+                                                         instructions: [instruction])
         
         // Assert
         XCTAssertNotNil(recipe)
@@ -79,7 +57,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
     
     func testFetchAllRecipes() {
         do {
-            let results = try self.sut.fetchAll()
+            let results = try CoreDataService.shared.fetchAll()
             
             XCTAssertEqual(results.count, 5)
             
@@ -90,7 +68,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
     
     func testFetchCurrentRecipe() {
         do {
-            let recipe = try self.sut.fetchCurrentRecipe()
+            let recipe = try CoreDataService.shared.fetchCurrentRecipe()
             
             XCTAssertNotNil(recipe)
         } catch {
@@ -100,15 +78,15 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
     
     func testRemoveRecipe() {
         do {
-            let recipes = try self.sut.fetchAll()
+            let recipes = try CoreDataService.shared.fetchAll()
             let recipe = recipes.first
             let numberOfItems = recipes.count // Check how many recipes are in Core Data before deletion
             
             if let recipe = recipe {
-                self.sut.delete(object: recipe)
+                CoreDataService.shared.delete(object: recipe)
                 
                 do {
-                    let currentRecipes = try self.sut.fetchAll() // Check how many recipes are in Core Data after deletion
+                    let currentRecipes = try CoreDataService.shared.fetchAll() // Check how many recipes are in Core Data after deletion
                     
                     XCTAssertEqual(currentRecipes.count, numberOfItems - 1)
 
@@ -158,9 +136,9 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
         insertRecipe(current: false, finished: false, image: Data(), name: "Bolo de manga", starred: false)
         
         do {
-            try self.context.save()
+            try self.saveContext()
         } catch {
-            print("\n\n\n\n\n\(error)")
+            fatalError("Ended with error: \(error.localizedDescription)")
         }
     }
     
@@ -172,9 +150,48 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
         }
         
         do {
-            try self.context.save()
+            try self.saveContext()
         } catch {
-            print("\n\n\n\n\n\(error)")
+            fatalError("Ended with error: \(error.localizedDescription)")
+        }
+    }
+}
+
+// MARK: - Auxiliar functions
+extension receitas_jacquenanCoreDataTests {
+    func mockPersistentContainer() -> NSPersistentContainer {
+        let managedObjectModel = NSManagedObjectModel.mergedModel(from: [Bundle(for: type(of: self))])!
+        let container = NSCustomPersistentContainer(name: "receitas-jacquenan", managedObjectModel: managedObjectModel)
+        let description = NSPersistentStoreDescription()
+        
+        description.type = NSInMemoryStoreType
+        description.shouldAddStoreAsynchronously = false
+        
+        container.persistentStoreDescriptions = [description]
+        container.loadPersistentStores { (description, error) in
+            
+            // Check if the data store is in memory
+            precondition(description.type == NSInMemoryStoreType)
+            
+            // Check if creating container wrong
+            if let error = error {
+                fatalError("Create an in-memory coordinator failed \(error)")
+            }
+        }
+        
+        return container
+    }
+    
+    func saveContext() throws {
+        if self.context.hasChanges {
+            do {
+               try self.context.save()
+                
+            } catch let error as NSError {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                throw error
+            }
         }
     }
 }

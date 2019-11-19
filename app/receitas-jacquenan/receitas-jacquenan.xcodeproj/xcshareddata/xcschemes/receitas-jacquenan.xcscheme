@@ -49,6 +49,16 @@
                ReferencedContainer = "container:receitas-jacquenan.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "17AE4C75237C3480000B488A"
+               BuildableName = "receitas-jacquenanCoreDataTests.xctest"
+               BlueprintName = "receitas-jacquenanCoreDataTests"
+               ReferencedContainer = "container:receitas-jacquenan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
