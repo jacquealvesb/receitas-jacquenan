@@ -22,6 +22,6 @@ class MainViewViewModel: ObservableObject {
 
 extension MainViewViewModel: RequestServiceDelegate {
     func didReceiveData(_ data: Data) {
-        
+        CoreDataService().insertRecipe(data)
     }
 }

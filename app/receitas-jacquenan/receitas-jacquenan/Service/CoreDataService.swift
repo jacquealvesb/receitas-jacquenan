@@ -98,6 +98,19 @@ class CoreDataService {
     }
     
     // MARK: - Insert methods
+    func insertRecipe(_ json: Data) -> Recipe? {
+        let recipe = Recipe(context: self.context)
+        recipe.decode(json)
+        
+        do {
+            try self.saveContext()
+            return recipe
+        } catch let error as NSError {
+            print("\(error)")
+            return nil
+        }
+    }
+    
     func insertRecipe(current: Bool, finished: Bool, image: Data, name: String,
                       starred: Bool, ingredients: [Ingredient], instructions: [Instruction]) -> Recipe? {
         let recipe = Recipe(context: self.context)

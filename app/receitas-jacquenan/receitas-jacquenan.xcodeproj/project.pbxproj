@@ -37,7 +37,15 @@
 		17DEB8992382D4F6009C7B96 /* InstructionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB8962382C799009C7B96 /* InstructionState.swift */; };
 		22310B193F7E8BDAD60F0CE8 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */; };
 		51B6EBB7F2888FC6DF89E590 /* Pods_receitas_jacquenan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */; };
-		7817A0B82382DDF5006BC4C9 /* Recipe+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Codable.swift */; };
+		7814CF8B2382ED3D00E700FA /* Recipe+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */; };
+		7814CF8C2382ED3E00E700FA /* Recipe+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */; };
+		7814CF8E2383622100E700FA /* Instruction+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF8D2383622100E700FA /* Instruction+Decode.swift */; };
+		7814CF8F2383688F00E700FA /* Instruction+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF8D2383622100E700FA /* Instruction+Decode.swift */; };
+		7814CF902383688F00E700FA /* Instruction+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF8D2383622100E700FA /* Instruction+Decode.swift */; };
+		7814CF922383694E00E700FA /* Ingredient+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF912383694E00E700FA /* Ingredient+Decode.swift */; };
+		7814CF93238369CA00E700FA /* Ingredient+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF912383694E00E700FA /* Ingredient+Decode.swift */; };
+		7814CF94238369CA00E700FA /* Ingredient+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814CF912383694E00E700FA /* Ingredient+Decode.swift */; };
+		7817A0B82382DDF5006BC4C9 /* Recipe+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */; };
 		7828078E237D9A9E002A8BFF /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828078D237D9A9E002A8BFF /* MainViewViewModel.swift */; };
 		78280791237D9C36002A8BFF /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78280790237D9C36002A8BFF /* RequestService.swift */; };
 		AE89786BFF8F939491B1111D /* Pods_receitas_jacquenanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */; };
@@ -128,7 +136,9 @@
 		467AE5B3D4B2FB4F12E98B1C /* Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB704C6D13C860D60E613D9 /* Pods-receitas-jacquenan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.debug.xcconfig"; sourceTree = "<group>"; };
-		7817A0B72382DDF5006BC4C9 /* Recipe+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Codable.swift"; sourceTree = "<group>"; };
+		7814CF8D2383622100E700FA /* Instruction+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+Decode.swift"; sourceTree = "<group>"; };
+		7814CF912383694E00E700FA /* Ingredient+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+Decode.swift"; sourceTree = "<group>"; };
+		7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Decode.swift"; sourceTree = "<group>"; };
 		7828078D237D9A9E002A8BFF /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		78280790237D9C36002A8BFF /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		A827672ABD477458F3FF4CB7 /* Pods-receitas-jacquenanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,7 +204,9 @@
 			children = (
 				171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */,
 				17DEB8962382C799009C7B96 /* InstructionState.swift */,
-				7817A0B72382DDF5006BC4C9 /* Recipe+Codable.swift */,
+				7814CF8D2383622100E700FA /* Instruction+Decode.swift */,
+				7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */,
+				7814CF912383694E00E700FA /* Ingredient+Decode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +292,15 @@
 			path = "receitas-jacquenanUITests";
 			sourceTree = "<group>";
 		};
+		17AE4C77237C3480000B488A /* receitas-jacquenanCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				17AE4C78237C3480000B488A /* receitas_jacquenanCoreDataTests.swift */,
+				17AE4C7A237C3480000B488A /* Info.plist */,
+			);
+			path = "receitas-jacquenanCoreDataTests";
+			sourceTree = "<group>";
+		};
 		7828078C237D9A6E002A8BFF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,7 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				78280790237D9C36002A8BFF /* RequestService.swift */,
-                1799787E237C219100ACEB62 /* CoreDataService.swift */,
+				1799787E237C219100ACEB62 /* CoreDataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -638,10 +659,13 @@
 				170867B12370EC31005215E9 /* IntentHandler.swift in Sources */,
 				17AE4C6F237C27AE000B488A /* receitas-jacquenan.xcdatamodeld in Sources */,
 				1731769823799AD000D2E321 /* RepeatInstructionIntentHandler.swift in Sources */,
+				7814CF8B2382ED3D00E700FA /* Recipe+Decode.swift in Sources */,
 				17AE4C71237C27B5000B488A /* NSCustomPersistentContainer.swift in Sources */,
 				1728F24F237450D600DE02F4 /* IngredientAmountIntentHandler.swift in Sources */,
 				17AE4C6E237C27AB000B488A /* CoreDataService.swift in Sources */,
 				17AAB5A32384094B009E1B41 /* RecipeSiriFacade.swift in Sources */,
+				7814CF8F2383688F00E700FA /* Instruction+Decode.swift in Sources */,
+				7814CF93238369CA00E700FA /* Ingredient+Decode.swift in Sources */,
 				17B6B08823799E3500E8C782 /* NextInstructionIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,14 +676,17 @@
 			files = (
 				17AE4C70237C27B1000B488A /* Intents.intentdefinition in Sources */,
 				178F7342237AFD0C00AA7089 /* NSCustomPersistentContainer.swift in Sources */,
+				7814CF922383694E00E700FA /* Ingredient+Decode.swift in Sources */,
 				1799787F237C219100ACEB62 /* CoreDataService.swift in Sources */,
 				78280791237D9C36002A8BFF /* RequestService.swift in Sources */,
+				7814CF8E2383622100E700FA /* Instruction+Decode.swift in Sources */,
+				178F7342237AFD0C00AA7089 /* NSCustomPersistentContainer.swift in Sources */,
 				1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */,
 				17DEB8972382C799009C7B96 /* InstructionState.swift in Sources */,
 				17DEB8952382C567009C7B96 /* RecipeViewModel.swift in Sources */,
 				1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */,
 				7828078E237D9A9E002A8BFF /* MainViewViewModel.swift in Sources */,
-				7817A0B82382DDF5006BC4C9 /* Recipe+Codable.swift in Sources */,
+				7817A0B82382DDF5006BC4C9 /* Recipe+Decode.swift in Sources */,
 				171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */,
 				1736EFDE23687394007A2B88 /* ContentView.swift in Sources */,
 				1736EFDE23687394007A2B88 /* MainView.swift in Sources */,
@@ -686,8 +713,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7814CF902383688F00E700FA /* Instruction+Decode.swift in Sources */,
 				17BEF8E2237C9036008D1380 /* receitas-jacquenan.xcdatamodeld in Sources */,
+				7814CF8C2382ED3E00E700FA /* Recipe+Decode.swift in Sources */,
 				17AE4C79237C3480000B488A /* receitas_jacquenanCoreDataTests.swift in Sources */,
+				7814CF94238369CA00E700FA /* Ingredient+Decode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
