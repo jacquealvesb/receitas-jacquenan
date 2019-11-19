@@ -138,7 +138,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
         do {
             try self.saveContext()
         } catch {
-            print("\n\n\n\n\n\(error)")
+            fatalError("Ended with error: \(error.localizedDescription)")
         }
     }
     
@@ -152,7 +152,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
         do {
             try self.saveContext()
         } catch {
-            print("\n\n\n\n\n\(error)")
+            fatalError("Ended with error: \(error.localizedDescription)")
         }
     }
 }
