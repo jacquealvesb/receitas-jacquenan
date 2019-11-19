@@ -10,9 +10,12 @@ import Intents
 
 class RepeatInstructionIntentHandler: NSObject, RepeatInstructionIntentHandling {
     func handle(intent: RepeatInstructionIntent, completion: @escaping (RepeatInstructionIntentResponse) -> Void) {
-        // TO DO: Get the current instruction
-        let instruction = "Repeat the current instruction that has been get from CoreData"
+        // Get current instruction
+        guard let current = RecipeSiriFacade.shared.currentInstruction else {
+            completion(RepeatInstructionIntentResponse.init(code: .failure, userActivity: nil)) // Fails
+            return
+        }
         
-        completion(RepeatInstructionIntentResponse.success(instruction: instruction))
+        completion(RepeatInstructionIntentResponse.success(instruction: current.instruction ?? "" )) // Responds with the current instruction
     }
 }
