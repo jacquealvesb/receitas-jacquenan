@@ -74,8 +74,8 @@ class RecipeSiriFacade {
         guard let ingredients = self.ingredients else { return nil } // Get all ingredients from the recipe
         
         guard let ingredient = ingredients.first(where: { (ingredient) -> Bool in
-            // return ingredient.name == ingredientName
-            return ingredient.name?.contains(ingredientName) ?? false
+            // return ingredient.name.lowercased() == ingredientName
+            return ingredient.name?.lowercased().contains(ingredientName) ?? false
         }) else {
             return nil
         }
