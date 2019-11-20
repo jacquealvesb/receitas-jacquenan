@@ -45,7 +45,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
         
         let recipe = CoreDataService.shared.insertRecipe(current: false,
                                                          finished: false,
-                                                         image: Data(),
+                                                         image: "",
                                                          name: "Bolo de rolo",
                                                          starred: false,
                                                          ingredients: [ingredient],
@@ -104,7 +104,7 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
     // MARK: - Auxiliar functions
     func initStubs() {
         
-        func insertRecipe(current: Bool, finished: Bool, image: Data, name: String, starred: Bool) {
+        func insertRecipe(current: Bool, finished: Bool, image: String, name: String, starred: Bool) {
             let recipe = Recipe(context: self.context)
             recipe.current = current
             recipe.finished = finished
@@ -129,11 +129,11 @@ class receitas_jacquenanCoreDataTests: XCTestCase {
             recipe.addToIngredients(NSSet(array: ingredients))
         }
         
-        insertRecipe(current: false, finished: false, image: Data(), name: "Bolo de rolo", starred: false)
-        insertRecipe(current: true, finished: false, image: Data(), name: "Bolo de cenoura", starred: false)
-        insertRecipe(current: false, finished: false, image: Data(), name: "Bolo de laranja", starred: false)
-        insertRecipe(current: false, finished: false, image: Data(), name: "Bolo de chocolate", starred: false)
-        insertRecipe(current: false, finished: false, image: Data(), name: "Bolo de manga", starred: false)
+        insertRecipe(current: false, finished: false, image: "", name: "Bolo de rolo", starred: false)
+        insertRecipe(current: true, finished: false, image: "", name: "Bolo de cenoura", starred: false)
+        insertRecipe(current: false, finished: false, image: "", name: "Bolo de laranja", starred: false)
+        insertRecipe(current: false, finished: false, image: "", name: "Bolo de chocolate", starred: false)
+        insertRecipe(current: false, finished: false, image: "", name: "Bolo de manga", starred: false)
         
         do {
             try self.saveContext()
