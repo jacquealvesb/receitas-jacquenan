@@ -22,6 +22,6 @@ class MainViewViewModel: ObservableObject {
 
 extension MainViewViewModel: RequestServiceDelegate {
     func didReceiveData(_ data: Data) {
-        let recipe = CoreDataService.shared.insertRecipe(data)
+        _ = CoreDataService.shared.insertRecipe(data)
     }
 }

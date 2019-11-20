@@ -33,7 +33,6 @@ class RequestService: NSObject {
                                     delegateQueue: nil)
     }
     
-    
     /// Creates a task to request the api for the recipe
     /// - Parameter url: the url of tastemade's recipe
     func getRecipe(_ url: String) {
@@ -47,7 +46,6 @@ class RequestService: NSObject {
 
 // MARK: - DataDelegate
 extension RequestService: URLSessionDataDelegate {
-    
     
     /// Receive the api's answer and calls the delegate
     /// - Parameters:

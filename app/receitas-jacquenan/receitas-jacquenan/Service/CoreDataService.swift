@@ -100,7 +100,6 @@ class CoreDataService {
     
     // MARK: - Insert methods
     
-    
     /// Decode and saves a recipe given a JSON
     /// - Parameter json: the json requested for the api
     func insertRecipe(_ json: Data) -> Recipe? {
@@ -116,7 +115,6 @@ class CoreDataService {
         }
     }
     
-    
     /// Creates and saves to coredate a recipe given all the parameters
     /// - Parameters:
     ///   - current: It's the current active recipe
@@ -128,6 +126,7 @@ class CoreDataService {
     ///   - instructions: List of instructions to reproduce the recipe
     func insertRecipe(current: Bool, finished: Bool, image: String, name: String,
                       starred: Bool, ingredients: [Ingredient], instructions: [Instruction]) -> Recipe? {
+        
         let recipe = Recipe(context: self.context)
         recipe.current = current
         recipe.finished = finished
@@ -147,8 +146,6 @@ class CoreDataService {
         }
     }
     
-    
-    
     /// Creates a ingridient given all the parameters
     /// - Parameters:
     ///   - amount: The amount of this ingridient present in the recipe
@@ -162,7 +159,6 @@ class CoreDataService {
         return ingredient
         
     }
-    
     
     /// Creates a instruction given all the parameters
     /// - Parameters:
@@ -180,7 +176,6 @@ class CoreDataService {
     
     // MARK: - Delete
 
-    
     /// Deletes an object from the coredata
     /// - Parameter object: An coredata's object of any type
     func delete(object: NSManagedObject) {
