@@ -18,18 +18,22 @@ extension Recipe {
 
                 guard let context = self.managedObjectContext else { return }
                 
-                self.current = true         // default value
-                self.finished = false       // default value
+                self.current = true
+                self.finished = false
                 self.image = translatedJSON["thumbnail"] as? String ?? ""
                 self.name = translatedJSON["title"] as? String ?? ""
-                self.starred = false        // default value
+                self.starred = false
+                
+                var first = true
                 
                 for rawInstruction in translatedJSON["instructions"] as? NSArray ?? [] {
                     
                     let instruction = Instruction(context: context)
-                    instruction.decode(rawInstruction)
+                    instruction.decode(rawInstruction, first: first)
                     
                     self.addToInstructions(instruction)
+                    
+                    first = false
                     
                 }
                 

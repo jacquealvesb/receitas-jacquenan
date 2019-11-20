@@ -9,12 +9,12 @@
 import Foundation
 
 extension Instruction {
-    func decode(_ rawInstruction: Any) {
+    func decode(_ rawInstruction: Any, first: Bool = false) {
         
         if let instruction = rawInstruction as? String {
             
             self.instruction = instruction
-            self.state = 0  // default value
+            self.state = first ? InstructionState.current.rawValue : InstructionState.toDo.rawValue
             
         } else {
             return
