@@ -38,9 +38,6 @@ class RecipeSiriFacade {
     
     var currentInstructionIndex: Int? {
         guard let instructions = self.instructions else { return nil } // Get all instructions from the recipe
-        for ins in instructions {
-            print(ins.state)
-        }
         guard let currentIndex = instructions.firstIndex(where: { $0.state == InstructionState.current.rawValue }) else { return nil } // Get the index of the current instruction
         
         return currentIndex
