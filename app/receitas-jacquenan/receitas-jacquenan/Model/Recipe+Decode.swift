@@ -18,9 +18,9 @@ extension Recipe {
 
                 guard let context = self.managedObjectContext else { return }
                 
-                self.current = false        // default value
+                self.current = true         // default value
                 self.finished = false       // default value
-                self.image = nil            // default value
+                self.image = translatedJSON["thumbnail"] as? String ?? ""
                 self.name = translatedJSON["title"] as? String ?? ""
                 self.starred = false        // default value
                 
@@ -40,18 +40,6 @@ extension Recipe {
                     
                     self.addToIngredients(ingredient)
                     
-                }
-                
-                if let url = URL(string: translatedJSON["thumbnail"] as? String ?? "") {
-                    let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-                        if let error = error {
-                            print(error)
-                        } else {
-//                            self.image = data
-                        }
-                    }
-                    
-                    task.resume()
                 }
 
             }

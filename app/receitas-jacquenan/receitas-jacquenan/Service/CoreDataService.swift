@@ -111,7 +111,7 @@ class CoreDataService {
         }
     }
     
-    func insertRecipe(current: Bool, finished: Bool, image: Data, name: String,
+    func insertRecipe(current: Bool, finished: Bool, image: String, name: String,
                       starred: Bool, ingredients: [Ingredient], instructions: [Instruction]) -> Recipe? {
         let recipe = Recipe(context: self.context)
         recipe.current = current
