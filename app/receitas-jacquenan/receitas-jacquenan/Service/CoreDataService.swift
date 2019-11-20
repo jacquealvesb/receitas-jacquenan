@@ -84,6 +84,7 @@ class CoreDataService {
         }
     }
     
+    /// Fetch all the recipies saved in the coredata
     func fetchAll() throws -> [Recipe] {
         let fetchRequest = NSFetchRequest<Recipe>(entityName: "Recipe")
         
@@ -98,8 +99,34 @@ class CoreDataService {
     }
     
     // MARK: - Insert methods
-    func insertRecipe(current: Bool, finished: Bool, image: Data, name: String,
+    
+    /// Decode and saves a recipe given a JSON
+    /// - Parameter json: the json requested for the api
+    func insertRecipe(_ json: Data) -> Recipe? {
+        let recipe = Recipe(context: self.context)
+        recipe.decode(json)
+        
+        do {
+            try self.saveContext()
+            return recipe
+        } catch let error as NSError {
+            print("\(error)")
+            return nil
+        }
+    }
+    
+    /// Creates and saves to coredate a recipe given all the parameters
+    /// - Parameters:
+    ///   - current: It's the current active recipe
+    ///   - finished: It's finished
+    ///   - image: Recipe's thumbnail url
+    ///   - name: Recipe's title
+    ///   - starred: If the user starred the recipe
+    ///   - ingredients: List of ingridients present in the recipe
+    ///   - instructions: List of instructions to reproduce the recipe
+    func insertRecipe(current: Bool, finished: Bool, image: String, name: String,
                       starred: Bool, ingredients: [Ingredient], instructions: [Instruction]) -> Recipe? {
+        
         let recipe = Recipe(context: self.context)
         recipe.current = current
         recipe.finished = finished
@@ -119,6 +146,10 @@ class CoreDataService {
         }
     }
     
+    /// Creates a ingridient given all the parameters
+    /// - Parameters:
+    ///   - amount: The amount of this ingridient present in the recipe
+    ///   - name: Ingridient's name
     func insertIngredient(amount: String, name: String) -> Ingredient {
         
         let ingredient = Ingredient(context: self.context)
@@ -129,6 +160,10 @@ class CoreDataService {
         
     }
     
+    /// Creates a instruction given all the parameters
+    /// - Parameters:
+    ///   - instructionContent: String containing the actual instruction
+    ///   - state: Controls if the instruction is the current, past or it's to come
     func insertInstruction(instructionContent: String, state: Int) -> Instruction {
         
         let instruction = Instruction(context: self.context)
@@ -140,6 +175,9 @@ class CoreDataService {
     }
     
     // MARK: - Delete
+
+    /// Deletes an object from the coredata
+    /// - Parameter object: An coredata's object of any type
     func delete(object: NSManagedObject) {
         self.context.delete(object)
         
