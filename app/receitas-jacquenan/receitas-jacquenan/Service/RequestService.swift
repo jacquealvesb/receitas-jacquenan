@@ -33,6 +33,9 @@ class RequestService: NSObject {
                                     delegateQueue: nil)
     }
     
+    
+    /// Creates a task to request the api for the recipe
+    /// - Parameter url: the url of tastemade's recipe
     func getRecipe(_ url: String) {
         guard let url = URL(string: "\(self.apiURL)/recipe?recipe=\(url)") else { return }
         
@@ -45,13 +48,24 @@ class RequestService: NSObject {
 // MARK: - DataDelegate
 extension RequestService: URLSessionDataDelegate {
     
+    
+    /// Receive the api's answer and calls the delegate
+    /// - Parameters:
+    ///   - session: the shared session
+    ///   - dataTask: task responsable
+    ///   - data: data requested for the api
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         // Receive request
         self.delegate?.didReceiveData(data)
     }
     
+    /// Just receives an answer for the request and connect the task with the app
+    /// - Parameters:
+    ///   - session: the shared session
+    ///   - dataTask: task responsable
+    ///   - response: api's response (200, 404, etc)
+    ///   - completionHandler: depending on the answer, proceed the task to connect with the app
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-        print(response)
         completionHandler(.allow)
     }
         
