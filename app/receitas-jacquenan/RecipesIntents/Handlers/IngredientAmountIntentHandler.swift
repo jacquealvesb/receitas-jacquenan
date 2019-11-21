@@ -20,6 +20,8 @@ class IngredientAmountIntentHandler: NSObject, IngredientAmountIntentHandling {
 //        let amount = ingredient.amount ?? ""
         
 //        completion(IngredientAmountIntentResponse.success(amount: amount, ingredient: ingredientName)) // Respond inform the amount of the ingredient
+        
+        // Temporary solution untill we don't separate the ingredient and its amount
         completion(IngredientAmountIntentResponse.success(ingredient: ingredientName)) // Respond inform the amount of the ingredient
     }
     
