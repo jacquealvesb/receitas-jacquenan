@@ -1,6 +1,6 @@
 "0IA1yE" = "${instruction}";
 
-"2kKNMe" = "Você tem que colocar ${amount} de ${ingredient}";
+"2kKNMe" = "Você tem que colocar ${ingredient}";
 
 "3kFAjT" = "Ingrediente";
 

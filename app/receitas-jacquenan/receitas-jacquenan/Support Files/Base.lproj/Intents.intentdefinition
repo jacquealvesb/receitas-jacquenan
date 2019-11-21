@@ -100,7 +100,7 @@
 				<array>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>You have to put ${amount} of ${ingredient}</string>
+						<string>You have to put ${ingredient}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>2kKNMe</string>
 						<key>INIntentResponseCodeName</key>
