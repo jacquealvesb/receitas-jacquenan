@@ -13,11 +13,16 @@ struct MainView: View {
     @ObservedObject var viewModel = MainViewViewModel()
     
     var body: some View {
-        VStack {
-            TextField("URL", text: $viewModel.url)
-            Button(action: self.viewModel.getRecipe) {
-                Text("Procurar")
+        ZStack {
+            Color("Background").edgesIgnoringSafeArea(.all)
+            VStack(alignment: .leading) {
+                Text("Link da receita")
+                    .font(.headline)
+                    .foregroundColor(Color(red: 60/255, green: 65/255, blue: 59/255))
+                SearchBar(searchText: $viewModel.url, handler: self.viewModel.getRecipe)
             }
+            .padding(20)
+            
         }
     }
 }
