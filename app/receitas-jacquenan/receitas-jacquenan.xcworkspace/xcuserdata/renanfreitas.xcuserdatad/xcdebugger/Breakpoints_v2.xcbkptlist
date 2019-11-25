@@ -16,24 +16,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
             endingLineNumber = "112"
-            landmarkName = "insertRecipe(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1A4F6FE6-921F-492A-95B9-06E6742C8401"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "receitas-jacquenan/Service/CoreDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "insertRecipe(_:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "1A4F6FE6-921F-492A-95B9-06E6742C8401 - 52955d86d8497e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "receitas_jacquenan.CoreDataService.insertRecipe(Foundation.Data) -&gt; Swift.Optional&lt;receitas_jacquenan.Recipe&gt;"
+                  moduleName = "receitas-jacquenan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renanfreitas/Desktop/receitas-jacquenan/app/receitas-jacquenan/receitas-jacquenan/Service/CoreDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "1A4F6FE6-921F-492A-95B9-06E6742C8401 - 52955d86d8497e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "receitas_jacquenan.CoreDataService.insertRecipe(Foundation.Data) -&gt; Swift.Optional&lt;receitas_jacquenan.Recipe&gt;"
+                  moduleName = "receitas-jacquenan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renanfreitas/Desktop/receitas-jacquenan/app/receitas-jacquenan/receitas-jacquenan/Service/CoreDataService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "491">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

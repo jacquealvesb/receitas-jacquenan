@@ -49,6 +49,7 @@
 		7817A0B82382DDF5006BC4C9 /* Recipe+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */; };
 		7828078E237D9A9E002A8BFF /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828078D237D9A9E002A8BFF /* MainViewViewModel.swift */; };
 		78280791237D9C36002A8BFF /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78280790237D9C36002A8BFF /* RequestService.swift */; };
+		78425ED0238BF56100EEB1E5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78425ECF238BF56100EEB1E5 /* SearchBar.swift */; };
 		AE89786BFF8F939491B1111D /* Pods_receitas_jacquenanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498518D56F71ABDF2CC143BF /* Pods_receitas_jacquenanTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Decode.swift"; sourceTree = "<group>"; };
 		7828078D237D9A9E002A8BFF /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		78280790237D9C36002A8BFF /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		78425ECF238BF56100EEB1E5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A827672ABD477458F3FF4CB7 /* Pods-receitas-jacquenanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF138A9348F08EE13D6DEFFE /* Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan-receitas-jacquenanUITests/Pods-receitas-jacquenan-receitas-jacquenanUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				17D95D362385ABC6002842FA /* MainView.swift */,
+				78425ECF238BF56100EEB1E5 /* SearchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 			files = (
 				17AE4C70237C27B1000B488A /* Intents.intentdefinition in Sources */,
 				17D95D372385ABC6002842FA /* MainView.swift in Sources */,
+				78425ED0238BF56100EEB1E5 /* SearchBar.swift in Sources */,
 				7814CF922383694E00E700FA /* Ingredient+Decode.swift in Sources */,
 				1799787F237C219100ACEB62 /* CoreDataService.swift in Sources */,
 				78280791237D9C36002A8BFF /* RequestService.swift in Sources */,
