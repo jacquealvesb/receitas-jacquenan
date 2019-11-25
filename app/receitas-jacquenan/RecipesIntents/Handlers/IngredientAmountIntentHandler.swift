@@ -16,10 +16,13 @@ class IngredientAmountIntentHandler: NSObject, IngredientAmountIntentHandling {
             return
         }
         
-        let amount = ingredient.amount ?? ""
         let ingredientName = ingredient.name ?? ""
+//        let amount = ingredient.amount ?? ""
         
-        completion(IngredientAmountIntentResponse.success(amount: amount, ingredient: ingredientName)) // Respond inform the amount of the ingredient
+//        completion(IngredientAmountIntentResponse.success(amount: amount, ingredient: ingredientName)) // Respond inform the amount of the ingredient
+        
+        // Temporary solution untill we don't separate the ingredient and its amount
+        completion(IngredientAmountIntentResponse.success(ingredient: ingredientName)) // Respond inform the amount of the ingredient
     }
     
     func resolveIngredient(for intent: IngredientAmountIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
