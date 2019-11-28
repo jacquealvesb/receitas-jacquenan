@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1736EFD523687394007A2B88"
-               BuildableName = "receitas-jacquenan.app"
+               BuildableName = "Jacquenan.app"
                BlueprintName = "receitas-jacquenan"
                ReferencedContainer = "container:receitas-jacquenan.xcodeproj">
             </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1736EFD523687394007A2B88"
-            BuildableName = "receitas-jacquenan.app"
+            BuildableName = "Jacquenan.app"
             BlueprintName = "receitas-jacquenan"
             ReferencedContainer = "container:receitas-jacquenan.xcodeproj">
          </BuildableReference>
@@ -93,7 +93,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1736EFD523687394007A2B88"
-            BuildableName = "receitas-jacquenan.app"
+            BuildableName = "Jacquenan.app"
             BlueprintName = "receitas-jacquenan"
             ReferencedContainer = "container:receitas-jacquenan.xcodeproj">
          </BuildableReference>
