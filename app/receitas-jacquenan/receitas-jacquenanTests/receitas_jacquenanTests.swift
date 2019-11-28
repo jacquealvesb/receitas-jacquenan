@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import receitas_jacquenan
+@testable import Jacquenan
 
 class receitas_jacquenanTests: XCTestCase {
     

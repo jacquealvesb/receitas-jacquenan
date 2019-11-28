@@ -8,7 +8,7 @@
 
 import XCTest
 import CoreData
-@testable import receitas_jacquenan
+@testable import Jacquenan
 
 class receitas_jacquenanCoreDataTests: XCTestCase {
     
