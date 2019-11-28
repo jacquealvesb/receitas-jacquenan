@@ -108,7 +108,7 @@
 		1728F24E237450D600DE02F4 /* IngredientAmountIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientAmountIntentHandler.swift; sourceTree = "<group>"; };
 		17317693237992E000D2E321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/Intents.intentdefinition; sourceTree = "<group>"; };
 		1731769723799AD000D2E321 /* RepeatInstructionIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatInstructionIntentHandler.swift; sourceTree = "<group>"; };
-		1736EFD623687394007A2B88 /* receitas-jacquenan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "receitas-jacquenan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1736EFD623687394007A2B88 /* Jacquenan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jacquenan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1736EFD923687394007A2B88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1736EFDB23687394007A2B88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1736EFDF23687394007A2B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 		1736EFD723687394007A2B88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1736EFD623687394007A2B88 /* receitas-jacquenan.app */,
+				1736EFD623687394007A2B88 /* Jacquenan.app */,
 				1736EFEC23687394007A2B88 /* receitas-jacquenanTests.xctest */,
 				1736EFF723687394007A2B88 /* receitas-jacquenanUITests.xctest */,
 				170867AE2370EC31005215E9 /* RecipesIntents.appex */,
@@ -402,7 +402,7 @@
 			);
 			name = "receitas-jacquenan";
 			productName = "receitas-jacquenan";
-			productReference = 1736EFD623687394007A2B88 /* receitas-jacquenan.app */;
+			productReference = 1736EFD623687394007A2B88 /* Jacquenan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1736EFEB23687394007A2B88 /* receitas-jacquenanTests */ = {
@@ -936,7 +936,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jacquenan.receitas-jacquenan";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Jacquenan;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -959,7 +959,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jacquenan.receitas-jacquenan";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Jacquenan;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
