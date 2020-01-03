@@ -27,6 +27,9 @@
 		17AE4C70237C27B1000B488A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 17317694237992E000D2E321 /* Intents.intentdefinition */; };
 		17AE4C79237C3480000B488A /* receitas_jacquenanCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE4C78237C3480000B488A /* receitas_jacquenanCoreDataTests.swift */; };
 		17B6B08823799E3500E8C782 /* NextInstructionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */; };
+		17B861FF23BFAD1300E8F46A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B861FE23BFAD1300E8F46A /* OnBoardingView.swift */; };
+		17B8620223BFB33200E8F46A /* TextOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8620123BFB33200E8F46A /* TextOnBoarding.swift */; };
+		17B8620423BFB34100E8F46A /* AddToSiriOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8620323BFB34100E8F46A /* AddToSiriOnBoarding.swift */; };
 		17BEF8E2237C9036008D1380 /* receitas-jacquenan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */; };
 		17D95D342385AB7F002842FA /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */; };
 		17D95D352385AB92002842FA /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */; };
@@ -36,6 +39,8 @@
 		17DEB8972382C799009C7B96 /* InstructionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB8962382C799009C7B96 /* InstructionState.swift */; };
 		17DEB8982382D4A8009C7B96 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB8942382C567009C7B96 /* RecipeViewModel.swift */; };
 		17DEB8992382D4F6009C7B96 /* InstructionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DEB8962382C799009C7B96 /* InstructionState.swift */; };
+		17E89EC723BFC99600D1A7F6 /* TextOnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E89EC623BFC99600D1A7F6 /* TextOnBoardingViewController.swift */; };
+		17E89EC923BFCA4300D1A7F6 /* AddToSiriOnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E89EC823BFCA4300D1A7F6 /* AddToSiriOnBoardingViewController.swift */; };
 		22310B193F7E8BDAD60F0CE8 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */; };
 		51B6EBB7F2888FC6DF89E590 /* Pods_receitas_jacquenan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD6551345B5B7C5D6596353 /* Pods_receitas_jacquenan.framework */; };
 		7814CF8B2382ED3D00E700FA /* Recipe+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817A0B72382DDF5006BC4C9 /* Recipe+Decode.swift */; };
@@ -128,10 +133,15 @@
 		17AE4C78237C3480000B488A /* receitas_jacquenanCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receitas_jacquenanCoreDataTests.swift; sourceTree = "<group>"; };
 		17AE4C7A237C3480000B488A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextInstructionIntentHandler.swift; sourceTree = "<group>"; };
+		17B861FE23BFAD1300E8F46A /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		17B8620123BFB33200E8F46A /* TextOnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOnBoarding.swift; sourceTree = "<group>"; };
+		17B8620323BFB34100E8F46A /* AddToSiriOnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToSiriOnBoarding.swift; sourceTree = "<group>"; };
 		17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCustomPersistentContainer.swift; sourceTree = "<group>"; };
 		17D95D362385ABC6002842FA /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		17DEB8942382C567009C7B96 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		17DEB8962382C799009C7B96 /* InstructionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionState.swift; sourceTree = "<group>"; };
+		17E89EC623BFC99600D1A7F6 /* TextOnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOnBoardingViewController.swift; sourceTree = "<group>"; };
+		17E89EC823BFCA4300D1A7F6 /* AddToSiriOnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToSiriOnBoardingViewController.swift; sourceTree = "<group>"; };
 		247EC5F366D649BFA0AB32F2 /* Pods-receitas-jacquenanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenanTests.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenanTests/Pods-receitas-jacquenanTests.release.xcconfig"; sourceTree = "<group>"; };
 		248E28559E102DD49BB9715B /* Pods-receitas-jacquenan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-receitas-jacquenan.release.xcconfig"; path = "Target Support Files/Pods-receitas-jacquenan/Pods-receitas-jacquenan.release.xcconfig"; sourceTree = "<group>"; };
 		3D5A6DCEA9715FC6FE90F0D1 /* Pods_receitas_jacquenan_receitas_jacquenanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_receitas_jacquenan_receitas_jacquenanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +324,18 @@
 			path = "receitas-jacquenanCoreDataTests";
 			sourceTree = "<group>";
 		};
+		17B8620023BFB2E400E8F46A /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				17B861FE23BFAD1300E8F46A /* OnBoardingView.swift */,
+				17B8620123BFB33200E8F46A /* TextOnBoarding.swift */,
+				17B8620323BFB34100E8F46A /* AddToSiriOnBoarding.swift */,
+				17E89EC623BFC99600D1A7F6 /* TextOnBoardingViewController.swift */,
+				17E89EC823BFCA4300D1A7F6 /* AddToSiriOnBoardingViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		7828078C237D9A6E002A8BFF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +359,7 @@
 			children = (
 				17D95D362385ABC6002842FA /* MainView.swift */,
 				78425ECF238BF56100EEB1E5 /* SearchBar.swift */,
+				17B8620023BFB2E400E8F46A /* OnBoarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -671,15 +694,20 @@
 				17AE4C70237C27B1000B488A /* Intents.intentdefinition in Sources */,
 				17D95D372385ABC6002842FA /* MainView.swift in Sources */,
 				78425ED0238BF56100EEB1E5 /* SearchBar.swift in Sources */,
+				17E89EC923BFCA4300D1A7F6 /* AddToSiriOnBoardingViewController.swift in Sources */,
 				7814CF922383694E00E700FA /* Ingredient+Decode.swift in Sources */,
 				1799787F237C219100ACEB62 /* CoreDataService.swift in Sources */,
 				78280791237D9C36002A8BFF /* RequestService.swift in Sources */,
 				7814CF8E2383622100E700FA /* Instruction+Decode.swift in Sources */,
 				1736EFDA23687394007A2B88 /* AppDelegate.swift in Sources */,
+				17E89EC723BFC99600D1A7F6 /* TextOnBoardingViewController.swift in Sources */,
 				17DEB8972382C799009C7B96 /* InstructionState.swift in Sources */,
+				17B8620223BFB33200E8F46A /* TextOnBoarding.swift in Sources */,
 				17DEB8952382C567009C7B96 /* RecipeViewModel.swift in Sources */,
 				1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */,
+				17B861FF23BFAD1300E8F46A /* OnBoardingView.swift in Sources */,
 				7828078E237D9A9E002A8BFF /* MainViewViewModel.swift in Sources */,
+				17B8620423BFB34100E8F46A /* AddToSiriOnBoarding.swift in Sources */,
 				7817A0B82382DDF5006BC4C9 /* Recipe+Decode.swift in Sources */,
 				171DEBFF23704A180093C191 /* receitas-jacquenan.xcdatamodeld in Sources */,
 				17D95D342385AB7F002842FA /* NSCustomPersistentContainer.swift in Sources */,

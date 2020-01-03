@@ -24,13 +24,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.donateRepeatInstructionIntent()
         self.donateNextInstructionIntent()
 
-        // Create the SwiftUI view that provides the window contents.
-        let contentView = MainView()
-
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            
+            // Check if already finished onboarding
+            if let didOnBoarding = UserDefaults.standard.value(forKey: "finish_onboarding") as? Bool, didOnBoarding == true {
+                let contentView = MainView()
+                window.rootViewController = UIHostingController(rootView: contentView)
+            } else {
+                let contentView = OnBoardingView()
+                window.rootViewController = contentView
+            }
             self.window = window
             window.makeKeyAndVisible()
         }
