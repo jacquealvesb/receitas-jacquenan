@@ -40,6 +40,7 @@ class RecipeViewViewModel: ObservableObject {
         self.updateRecipe(with: recipe)
         
         // Receive recipe when one is inserted on context
+        // TODO: Replace with publisher only when add new recipe
         self.recipeCancellable = CoreDataService.shared.contextChangedPublisher()
             .receive(on: DispatchQueue.main)
             .sink { [weak self] hasChanges in
