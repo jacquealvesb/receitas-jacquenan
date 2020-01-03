@@ -10,17 +10,14 @@ import Intents
 
 class NextInstructionIntentHandler: NSObject, NextInstructionIntentHandling {
     func handle(intent: NextInstructionIntent, completion: @escaping (NextInstructionIntentResponse) -> Void) {
-        guard let finishedRecipe = RecipeSiriFacade.shared.finishedRecipe else { // Get if the current instruction is the last one
-            completion(NextInstructionIntentResponse.init(code: .failure, userActivity: nil)) // Fails
-            return
-        }
+        let recipeFacade = RecipeSiriFacade()
+        let response = recipeFacade.replaceCurrentInstruction()
         
-        if finishedRecipe { // Check if the current instruction is the last one
+        if response.last {  // Check if the current instruction is the last one
             completion(NextInstructionIntentResponse(code: .lastInstruction, userActivity: nil))
-            
         } else {
-            guard let next = RecipeSiriFacade.shared.replaceCurrentInstruction() else { // Go to the next instruction
-                completion(NextInstructionIntentResponse.init(code: .failure, userActivity: nil)) // Fails
+            guard let next = response.instruction else {
+                completion(NextInstructionIntentResponse(code: .failure, userActivity: nil)) // Fails
                 return
             }
             

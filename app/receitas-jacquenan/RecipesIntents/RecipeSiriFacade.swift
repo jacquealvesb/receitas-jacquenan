@@ -9,8 +9,6 @@
 import Foundation
 
 class RecipeSiriFacade {
-    public static var shared = RecipeSiriFacade()
-    
     let recipe = try? CoreDataService.shared.fetchCurrentRecipe() // Fetch the current recipe from CoreData
     
     var instructions: [Instruction]? {
@@ -52,19 +50,25 @@ class RecipeSiriFacade {
     
     /// Sets the state of the current instruction to done and of the next instruction to current
     /// Returns the next current instruction
-    func replaceCurrentInstruction() -> Instruction? {
-        guard let instructions = self.instructions else { return nil } // Get all instructions from the recipe
-        guard let currentIndex = self.currentInstructionIndex else { return nil }  // Get the index of the current instruction
+    func replaceCurrentInstruction() -> (instruction: Instruction?, last: Bool) {
+        guard let instructions = self.instructions else { return (nil, false) } // Get all instructions from the recipe
+        guard let currentIndex = self.currentInstructionIndex else { return (nil, false) }  // Get the index of the current instruction
         
         let current = instructions[currentIndex]
-        let next = instructions[currentIndex + 1]
-        
         current.state = InstructionState.done.rawValue // Set the current instruction as done
-        next.state = InstructionState.current.rawValue // Set the next instruction as the current one
         
-        try? CoreDataService.shared.saveContext() // Save the changes on the CoreData
-        
-        return next
+        if currentIndex == instructions.count - 1 { // Check if it was the last instruction
+            try? CoreDataService.shared.saveContext() // Save the changes on the CoreData
+            return (nil, true)
+            
+        } else {
+            let next = instructions[currentIndex + 1]
+            next.state = InstructionState.current.rawValue // Set the next instruction as the current one
+            
+            try? CoreDataService.shared.saveContext() // Save the changes on the CoreData
+            
+            return (next, false)
+        }
     }
     
     /// Get ingredient with the given name, if exists
