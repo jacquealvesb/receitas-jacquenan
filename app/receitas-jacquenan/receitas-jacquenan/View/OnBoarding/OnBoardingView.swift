@@ -109,7 +109,6 @@ class OnBoardingView: UIViewController {
     
     @objc func finish() {
         UserDefaults.standard.set(true, forKey: "finish_onboarding")
-        print("vai")
     }
 }
 

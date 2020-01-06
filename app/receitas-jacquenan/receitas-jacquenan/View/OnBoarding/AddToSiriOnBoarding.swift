@@ -94,11 +94,10 @@ extension AddToSiriOnBoarding {
     
     func setupConstraints() {
         // Image constraints
-        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
         imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 150).isActive = true
-        imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor).isActive = true
+        imageView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.4).isActive = true
+        imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor).isActive = true
+        NSLayoutConstraint(item: imageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 0.3, constant: 0).isActive = true
         
         // Title constraints
         titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true
