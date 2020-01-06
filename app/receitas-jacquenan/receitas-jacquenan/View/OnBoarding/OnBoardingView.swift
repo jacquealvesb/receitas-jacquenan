@@ -109,6 +109,12 @@ class OnBoardingView: UIViewController {
     
     @objc func finish() {
         UserDefaults.standard.set(true, forKey: "finish_onboarding")
+        if let sceneDelegate = self.view.window?.windowScene?.delegate as? SceneDelegate {
+            let viewController = sceneDelegate.viewControllerFor(MainView())
+            viewController.modalPresentationStyle = .fullScreen
+            
+            present(viewController, animated: true)
+        }
     }
 }
 

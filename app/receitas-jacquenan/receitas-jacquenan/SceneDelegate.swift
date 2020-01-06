@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // Check if already finished onboarding
             if let didOnBoarding = UserDefaults.standard.value(forKey: "finish_onboarding") as? Bool, didOnBoarding == true {
                 let contentView = MainView()
-                window.rootViewController = UIHostingController(rootView: contentView)
+                window.rootViewController = self.viewControllerFor(contentView)
             } else {
                 let contentView = OnBoardingView()
                 window.rootViewController = contentView
@@ -70,6 +70,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Save context when enter background
         try? CoreDataService.shared.saveContext()
+    }
+}
+
+extension SceneDelegate {
+    func viewControllerFor<T: View>(_ swiftUIView: T) -> UIViewController {
+        return UIHostingController(rootView: swiftUIView)
     }
 }
 
