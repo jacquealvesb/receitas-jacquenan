@@ -63,11 +63,11 @@ class OnBoardingView: UIViewController {
         let page3 = AddToSiriOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_repeat"),
                                                       title: "PEÇA AJUDA PARA A SIRI",
                                                       text: "Peça para ela repetir o passo atual que você esqueceu.",
-                                                      intent: ingredientAmountIntent)
+                                                      intent: repeatInstructionIntent)
         let page4 = AddToSiriOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_next"),
                                                       title: "PEÇA AJUDA PARA A SIRI",
                                                       text: "Peça para ela dizer o próximo passo que você deve fazer.",
-                                                      intent: ingredientAmountIntent)
+                                                      intent: nextInstructionIntent)
         let page5 = TextOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_hat"), title: "", text: "", action: #selector(finish))
         
         self.pages.append(page1)
