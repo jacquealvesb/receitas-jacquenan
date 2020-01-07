@@ -397,9 +397,9 @@
 		78280792237D9D77002A8BFF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17B8620023BFB2E400E8F46A /* OnBoarding */,
 				17D95D362385ABC6002842FA /* MainView.swift */,
 				78425ECF238BF56100EEB1E5 /* SearchBar.swift */,
-				17B8620023BFB2E400E8F46A /* OnBoarding */,
 				170065A1238C123A004DA5A8 /* RecipeView.swift */,
 				175FC6F7238DBF1300348B20 /* LinkView.swift */,
 				17DA3337238EA94900E3ABE1 /* IngredientCell.swift */,

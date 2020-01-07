@@ -20,5 +20,5 @@
 "onboarding_siri_help" = "To do this, you'll have to add to Shortcuts";
 "ingredients_title" = "Ingredients";
 "instructions_title" = "Instructions";
-"empty_recipe_placeholder" = "You have no saved recipes yet. \ nPlace a recipe link on the screen above.";
+"empty_recipe_placeholder" = "You have no saved recipes yet. \nPlace a recipe link on the screen above.";
 "default_recipe_name" = "Recipe";

@@ -19,6 +19,7 @@ class TextOnBoarding: UIView {
         let view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.font = UIFont.preferredFont(forTextStyle: .headline)
+        view.textColor = UIColor(named: "Font")
         view.numberOfLines = 0
         view.textAlignment = .center
         return view
@@ -28,6 +29,7 @@ class TextOnBoarding: UIView {
         let view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.font = UIFont.preferredFont(forTextStyle: .body)
+        view.textColor = UIColor(named: "Font")
         view.numberOfLines = 0
         view.textAlignment = .center
         return view

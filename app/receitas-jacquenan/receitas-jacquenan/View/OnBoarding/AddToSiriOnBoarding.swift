@@ -20,6 +20,7 @@ class AddToSiriOnBoarding: UIView {
         let view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.font = UIFont.preferredFont(forTextStyle: .headline)
+        view.textColor = UIColor(named: "Font")
         view.numberOfLines = 0
         view.textAlignment = .center
         return view
@@ -29,6 +30,7 @@ class AddToSiriOnBoarding: UIView {
         let view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.font = UIFont.preferredFont(forTextStyle: .body)
+        view.textColor = UIColor(named: "Font")
         view.numberOfLines = 0
         view.textAlignment = .center
         return view
@@ -38,6 +40,7 @@ class AddToSiriOnBoarding: UIView {
         let view = UILabel(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.font = UIFont.preferredFont(forTextStyle: .caption1)
+        view.textColor = UIColor(named: "Font")
         view.numberOfLines = 0
         view.textAlignment = .center
         view.text = NSLocalizedString("onboarding_siri_help", comment: "Text for Siri button help on onboarding")
