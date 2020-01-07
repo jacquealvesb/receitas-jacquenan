@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  receitas-jacquenan
+
+  Created by Jacqueline Alves on 07/01/20.
+  Copyright © 2020 jacquenan. All rights reserved.
+*/
+"link_placeholder" = "http://linkdareceita.com.br";
+"link_title" = "Link da receita";
+"ingredient_amount_suggestion" = "Quanto eu coloco?";
+"repeat_instruction_suggestion" = "Repetir passo";
+"next_instruction_suggestion" = "Próximo passo";
+"onboarding_title0" = "COLOQUE O LINK DE UMA RECEITA E COMECE A COZINHAR";
+"onboarding_text0" = "A gente pega ela e deixa bonitinha pra você!";
+"onboarding_title_siri" = "PEÇA AJUDA PARA A SIRI";
+"onboarding_text1" = "Pergunte quanto de um ingrediente você precisa colocar.";
+"onboarding_text2" = "Peça para ela repetir o passo atual que você esqueceu.";
+"onboarding_text3" = "Peça para ela dizer o próximo passo que você deve fazer.";
+"onboarding_button" = "COMEÇAR";
+"onboarding_siri_help" = "Para fazer isso, você vai ter que adicionar ao Shortcuts";
+"ingredients_title" = "Ingredientes";
+"instructions_title" = "Modo de preparo";
+"empty_recipe_placeholder" = "Você não tem nenhuma receita salva ainda. \nColoque o link de uma receita na tela a cima.";
+"default_recipe_name" = "Receita";

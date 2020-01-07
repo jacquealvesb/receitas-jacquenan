@@ -27,16 +27,17 @@
 		175FC6F8238DBF1300348B20 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175FC6F7238DBF1300348B20 /* LinkView.swift */; };
 		1775E4C4238F584600DB04A3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775E4C3238F584600DB04A3 /* ActivityIndicator.swift */; };
 		1799787F237C219100ACEB62 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1799787E237C219100ACEB62 /* CoreDataService.swift */; };
+		179E441F23C4C35F00327A57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 179E442123C4C35F00327A57 /* Localizable.strings */; };
 		17AAB5A32384094B009E1B41 /* RecipeSiriFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AAB5A22384094B009E1B41 /* RecipeSiriFacade.swift */; };
 		17AE4C6E237C27AB000B488A /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1799787E237C219100ACEB62 /* CoreDataService.swift */; };
 		17AE4C6F237C27AE000B488A /* receitas-jacquenan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */; };
 		17AE4C70237C27B1000B488A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 17317694237992E000D2E321 /* Intents.intentdefinition */; };
 		17AE4C79237C3480000B488A /* receitas_jacquenanCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE4C78237C3480000B488A /* receitas_jacquenanCoreDataTests.swift */; };
 		17B6B08823799E3500E8C782 /* NextInstructionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6B08723799E3500E8C782 /* NextInstructionIntentHandler.swift */; };
+		17B861FB23BF9D3D00E8F46A /* InstructionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B861FA23BF9D3D00E8F46A /* InstructionStateView.swift */; };
 		17B861FF23BFAD1300E8F46A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B861FE23BFAD1300E8F46A /* OnBoardingView.swift */; };
 		17B8620223BFB33200E8F46A /* TextOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8620123BFB33200E8F46A /* TextOnBoarding.swift */; };
 		17B8620423BFB34100E8F46A /* AddToSiriOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8620323BFB34100E8F46A /* AddToSiriOnBoarding.swift */; };
-		17B861FB23BF9D3D00E8F46A /* InstructionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B861FA23BF9D3D00E8F46A /* InstructionStateView.swift */; };
 		17BEF8E2237C9036008D1380 /* receitas-jacquenan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 171DEBFD23704A180093C191 /* receitas-jacquenan.xcdatamodeld */; };
 		17D95D342385AB7F002842FA /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */; };
 		17D95D352385AB92002842FA /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */; };
@@ -145,6 +146,9 @@
 		1775E4C3238F584600DB04A3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		178F733C237AFBAB00AA7089 /* RecipesIntents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RecipesIntents.entitlements; sourceTree = "<group>"; };
 		1799787E237C219100ACEB62 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		179E442023C4C35F00327A57 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		179E442223C4C36900327A57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		179E442423C4C39600327A57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Intents.strings; sourceTree = "<group>"; };
 		17AAB5A22384094B009E1B41 /* RecipeSiriFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSiriFacade.swift; sourceTree = "<group>"; };
 		17AE4C76237C3480000B488A /* receitas-jacquenanCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "receitas-jacquenanCoreDataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AE4C78237C3480000B488A /* receitas_jacquenanCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receitas_jacquenanCoreDataTests.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 			children = (
 				17317694237992E000D2E321 /* Intents.intentdefinition */,
 				17D95D332385AB7F002842FA /* NSCustomPersistentContainer.swift */,
+				179E442123C4C35F00327A57 /* Localizable.strings */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1736EFE623687394007A2B88 /* LaunchScreen.storyboard in Resources */,
+				179E441F23C4C35F00327A57 /* Localizable.strings in Resources */,
 				17DA3347238EBE4300E3ABE1 /* done.png in Resources */,
 				17DA3345238EBE2D00E3ABE1 /* current.png in Resources */,
 				1736EFE323687394007A2B88 /* Preview Assets.xcassets in Resources */,
@@ -755,11 +761,9 @@
 				17E89EC723BFC99600D1A7F6 /* TextOnBoardingViewController.swift in Sources */,
 				17DEB8972382C799009C7B96 /* InstructionState.swift in Sources */,
 				17B8620223BFB33200E8F46A /* TextOnBoarding.swift in Sources */,
-				17DEB8952382C567009C7B96 /* RecipeViewModel.swift in Sources */,
 				175214EE238C04FC004B9BFF /* IngredientViewModel.swift in Sources */,
 				1736EFDC23687394007A2B88 /* SceneDelegate.swift in Sources */,
 				17B861FF23BFAD1300E8F46A /* OnBoardingView.swift in Sources */,
-				7828078E237D9A9E002A8BFF /* MainViewViewModel.swift in Sources */,
 				17B8620423BFB34100E8F46A /* AddToSiriOnBoarding.swift in Sources */,
 				175FC6F8238DBF1300348B20 /* LinkView.swift in Sources */,
 				175FC6F6238DBEDF00348B20 /* LinkViewViewModel.swift in Sources */,
@@ -830,6 +834,7 @@
 			children = (
 				17317693237992E000D2E321 /* Base */,
 				171D0FF723832F29000C5415 /* pt-BR */,
+				179E442423C4C39600327A57 /* en */,
 			);
 			name = Intents.intentdefinition;
 			sourceTree = "<group>";
@@ -840,6 +845,15 @@
 				1736EFE523687394007A2B88 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		179E442123C4C35F00327A57 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				179E442023C4C35F00327A57 /* pt-BR */,
+				179E442223C4C36900327A57 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
