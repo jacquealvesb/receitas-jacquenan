@@ -7,22 +7,17 @@
 //
 
 import SwiftUI
+import Combine
 
-struct MainView: View {
-    
-    @ObservedObject var viewModel = MainViewViewModel()
-    
+struct MainView: View {    
     var body: some View {
         ZStack {
-            Color("Background").edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading) {
-                Text("Link da receita")
-                    .font(.headline)
-                    .foregroundColor(Color(red: 60/255, green: 65/255, blue: 59/255))
-                SearchBar(searchText: $viewModel.url, handler: self.viewModel.getRecipe)
+            RecipeView()
+            VStack {
+                LinkView()
+                    .padding(.top, -125)
+                Spacer()
             }
-            .padding(20)
-            
         }
     }
 }

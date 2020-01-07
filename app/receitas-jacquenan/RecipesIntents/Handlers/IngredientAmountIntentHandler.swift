@@ -9,9 +9,10 @@
 import Intents
 
 class IngredientAmountIntentHandler: NSObject, IngredientAmountIntentHandling {
-    
     func handle(intent: IngredientAmountIntent, completion: @escaping (IngredientAmountIntentResponse) -> Void) {
-        guard let ingredient = RecipeSiriFacade.shared.getIngredient(named: intent.ingredient) else { // Try to get the ingredient from the recipe
+        let recipeFacade = RecipeSiriFacade()
+
+        guard let ingredient = recipeFacade.getIngredient(named: intent.ingredient) else { // Try to get the ingredient from the recipe
             completion(IngredientAmountIntentResponse.init(code: .failureNoIngredient, userActivity: nil)) // Fails responding the recipe doesnt have the ingredient
             return
         }

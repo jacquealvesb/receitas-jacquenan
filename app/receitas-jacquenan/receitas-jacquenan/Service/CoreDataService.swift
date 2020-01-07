@@ -7,8 +7,9 @@
 //
 
 import CoreData
+import Combine
 
-class CoreDataService {
+final class CoreDataService {
     public static var shared = CoreDataService()
     
     private var context: NSManagedObjectContext {
@@ -66,6 +67,10 @@ class CoreDataService {
         }
     }
     
+    public func contextChangedPublisher() -> AnyPublisher<Bool, Never> {
+        return context.publisher(for: \.hasChanges).eraseToAnyPublisher()
+    }
+    
     // MARK: - Fetch
     
     /// Fetch current recipe
@@ -87,6 +92,7 @@ class CoreDataService {
     /// Fetch all the recipies saved in the coredata
     func fetchAll() throws -> [Recipe] {
         let fetchRequest = NSFetchRequest<Recipe>(entityName: "Recipe")
+        fetchRequest.shouldRefreshRefetchedObjects = true
         
         do {
             let recipes = try context.fetch(fetchRequest)
@@ -96,6 +102,10 @@ class CoreDataService {
         } catch let error as NSError {
             throw error
         }
+    }
+    
+    func refreshContext() {
+        self.context.refreshAllObjects()
     }
     
     // MARK: - Insert methods
@@ -186,5 +196,17 @@ class CoreDataService {
         } catch let error as NSError {
             print("\(error)")
         }
+    }
+    
+    // MARK: - Update
+    
+    func replaceCurrentRecipe(with recipe: Recipe) {
+        guard let recipes = try? self.fetchAll() else { return }
+        for recipe in recipes {
+            recipe.current  = false
+        }
+        
+        recipe.current = true
+        try? self.saveContext()
     }
 }
