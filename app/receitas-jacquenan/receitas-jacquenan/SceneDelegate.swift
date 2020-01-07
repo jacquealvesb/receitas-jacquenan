@@ -87,7 +87,7 @@ extension SceneDelegate {
     func donateIngredientAmountIntent() {
         let intent = IngredientAmountIntent()
         
-        intent.suggestedInvocationPhrase = "How much do I put?"
+        intent.suggestedInvocationPhrase = NSLocalizedString("ingredient_amount_suggestion", comment: "Suggestion phrase for ingredient amount shortcut")
         intent.ingredient = "ingredient"
         
         let interaction = INInteraction(intent: intent, response: nil)
@@ -104,7 +104,7 @@ extension SceneDelegate {
     func donateRepeatInstructionIntent() {
         let intent = RepeatInstructionIntent()
         
-        intent.suggestedInvocationPhrase = "Repeat instruction"
+        intent.suggestedInvocationPhrase = NSLocalizedString("repeat_instruction_suggestion", comment: "Suggestion phrase for repeat instruction shortcut")
         
         let interaction = INInteraction(intent: intent, response: nil)
         
@@ -120,7 +120,7 @@ extension SceneDelegate {
     func donateNextInstructionIntent() {
         let intent = NextInstructionIntent()
         
-        intent.suggestedInvocationPhrase = "Next instruction"
+        intent.suggestedInvocationPhrase = NSLocalizedString("next_instruction_suggestion", comment: "Suggestion phrase for next instruction shortcut")
         
         let interaction = INInteraction(intent: intent, response: nil)
         

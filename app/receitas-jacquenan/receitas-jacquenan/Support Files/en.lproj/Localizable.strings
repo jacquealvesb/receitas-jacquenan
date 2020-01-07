@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  receitas-jacquenan
+
+  Created by Jacqueline Alves on 07/01/20.
+  Copyright © 2020 jacquenan. All rights reserved.
+*/
+"link_placeholder" = "http://recipelink.com";
+"link_title" = "Recipe link";
+"ingredient_amount_suggestion" = "How much do I put?";
+"repeat_instruction_suggestion" = "Repeat instruction";
+"next_instruction_suggestion" = "Next instruction";
+"onboarding_title0" = "Paste a recipe link and start cooking";
+"onboarding_text0" = "We take it and make it correctly formatted for you!";
+"onboarding_title_siri" = "Ask Siri for help";
+"onboarding_text1" = "Ask how much of an ingredient you need to put.";
+"onboarding_text2" = "Ask her to repeat the current step you forgot.";
+"onboarding_text3" = "Ask her to say the next step you should do.";
+"onboarding_button" = "START";
+"onboarding_siri_help" = "To do this, you'll have to add to Shortcuts";
+"ingredients_title" = "Ingredients";
+"instructions_title" = "Instructions";
+"empty_recipe_placeholder" = "You have no saved recipes yet. \ nPlace a recipe link on the screen above.";
+"default_recipe_name" = "Recipe";

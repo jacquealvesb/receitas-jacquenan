@@ -40,7 +40,7 @@ class AddToSiriOnBoarding: UIView {
         view.font = UIFont.preferredFont(forTextStyle: .caption1)
         view.numberOfLines = 0
         view.textAlignment = .center
-        view.text = "Para fazer isso, você vai ter que adicionar ao Shortcuts"
+        view.text = NSLocalizedString("onboarding_siri_help", comment: "Text for Siri button help on onboarding")
         return view
     }()
     

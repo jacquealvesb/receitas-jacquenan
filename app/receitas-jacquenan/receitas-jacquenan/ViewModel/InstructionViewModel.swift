@@ -49,8 +49,4 @@ class InstructionViewModel: ObservableObject, Identifiable {
                 self?.state = data ?? Data()
             }
     }
-    
-//    public func setCurrent() {
-//        print("esse é o atual")
-//    }
 }

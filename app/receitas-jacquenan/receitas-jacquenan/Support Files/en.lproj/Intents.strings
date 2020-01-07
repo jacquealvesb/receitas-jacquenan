@@ -1,0 +1,52 @@
+"0IA1yE" = "${instruction}";
+
+"2kKNMe" = "You have to put ${ingredient}";
+
+"3kFAjT" = "Ingredient";
+
+"5kI5pv" = "How much of ${ingredient} do I put?";
+
+"7GRi65" = "Tell me the next instruction";
+
+"A4AWHw" = "${instruction}";
+
+"E5MOGw" = "Instruction";
+
+"ECzqjQ" = "Instruction";
+
+"ICGwYH" = "Something wrong happend";
+
+"LGY3d5" = "Repeat Instruction";
+
+"MRXAKi" = "Something wrong happend";
+
+"P2lGzj" = "This recipe doesn't have ${ingredient}";
+
+"SBbhLd" = "Tell me the next instruction";
+
+"V2asxA" = "Next Instruction";
+
+"VOUiFe" = "Repeat instruction";
+
+"WDaQtj" = "Ingredient";
+
+"Yb9GlA" = "That was the last instruction, you've finished the recipe!";
+
+"e78koZ" = "Amount";
+
+"gLarw3" = "The amount of an ingredient to put on the recipe.";
+
+"mJZNAp" = "Go to the next instruction of the recipe and read it.";
+
+"mkhqRc" = "You want to know the amount of which ingredient?";
+
+"n1YGAt" = "Repeat instruction";
+
+"qgG7yF" = "Repeat the current instruction of the recipe";
+
+"ryONc8" = "How much of ${ingredient} do I put?";
+
+"u3kFoe" = "Something wrong happend";
+
+"xtfcLY" = "Ingredient Amount";
+
