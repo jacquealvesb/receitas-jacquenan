@@ -18,7 +18,7 @@ struct LinkView: View {
                 Group {
                     Spacer()
                     VStack(alignment: .leading) {
-                        Text("Link da receita")
+                        Text(NSLocalizedString("link_title", comment: "Title for link text field"))
                             .font(.headline)
                             .foregroundColor(Color("Font"))
                         SearchBar(searchText: $viewModel.url, handler: self.viewModel.getRecipe)

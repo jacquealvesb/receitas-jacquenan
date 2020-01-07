@@ -30,7 +30,7 @@ struct RecipeView: View {
                                     
                                     VStack(alignment: .leading) {
                                         VStack(alignment: .leading) {
-                                            Text("Ingredientes")
+                                            Text(NSLocalizedString("ingredients_title", comment: "Title for ingredients section"))
                                                 .font(.headline)
                                                 .padding(.vertical)
                                                 .foregroundColor(Color("Font"))
@@ -40,7 +40,7 @@ struct RecipeView: View {
                                         }
                                         .padding()
                                         VStack(alignment: .leading) {
-                                            Text("Modo de preparo")
+                                            Text(NSLocalizedString("instructions_title", comment: "Title for instructions section"))
                                                 .font(.headline)
                                                 .padding(.vertical)
                                                 .foregroundColor(Color("Font"))
@@ -67,7 +67,7 @@ struct RecipeView: View {
                 }
                 
             } else {
-                Text("Você não tem nenhuma receita salva ainda. \nColoque o link de uma receita na tela a cima.")
+                Text(NSLocalizedString("empty_recipe_placeholder", comment: "Placeholder for when there is no saved recipes"))
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)
             }

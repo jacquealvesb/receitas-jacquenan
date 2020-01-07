@@ -17,7 +17,7 @@ class RecipeViewViewModel: ObservableObject {
     private var recipe: Recipe?
     
     var name: String {
-        return recipe?.name ?? "Receita"
+        return recipe?.name ?? NSLocalizedString("default_recipe_name", comment: "Default name for recipe")
     }
     
     var hasRecipe: Bool {

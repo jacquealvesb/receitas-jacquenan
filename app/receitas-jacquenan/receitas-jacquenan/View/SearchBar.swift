@@ -21,7 +21,7 @@ struct SearchBar: View {
                 .padding(.leading, 10)
                 .foregroundColor(Color.gray)
             
-            TextField("http://linkdareceita.com.br", text: $searchText, onEditingChanged: { _ in
+            TextField(NSLocalizedString("link_placeholder", comment: "Recipe ;ink placeholder"), text: $searchText, onEditingChanged: { _ in
                 self.showCancelButton = true
             }, onCommit: self.handler)
                 .foregroundColor(Color.black)

@@ -25,7 +25,7 @@ class OnBoardingView: UIViewController {
     lazy var ingredientAmountIntent: IngredientAmountIntent = {
         let intent = IngredientAmountIntent()
         
-        intent.suggestedInvocationPhrase = "Quanto eu coloco?"
+        intent.suggestedInvocationPhrase = NSLocalizedString("ingredient_amount_suggestion", comment: "Suggestion phrase for ingredient amount shortcut")
         
         return intent
     }()
@@ -33,7 +33,7 @@ class OnBoardingView: UIViewController {
     lazy var repeatInstructionIntent: RepeatInstructionIntent = {
         let intent = RepeatInstructionIntent()
         
-        intent.suggestedInvocationPhrase = "Repetir passo"
+        intent.suggestedInvocationPhrase = NSLocalizedString("repeat_instruction_suggestion", comment: "Suggestion phrase for repeat instruction shortcut")
         
         return intent
     }()
@@ -41,7 +41,7 @@ class OnBoardingView: UIViewController {
     lazy var nextInstructionIntent: NextInstructionIntent = {
         let intent = NextInstructionIntent()
         
-        intent.suggestedInvocationPhrase = "Próximo passo"
+        intent.suggestedInvocationPhrase = NSLocalizedString("next_instruction_suggestion", comment: "Suggestion phrase for next instruction shortcut")
         
         return intent
     }()
@@ -54,20 +54,24 @@ class OnBoardingView: UIViewController {
         super.viewDidLoad()
         
         let page1 = TextOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_hat"),
-                                                 title: "COLOQUE O LINK DE UMA RECEITA E COMECE A COZINHAR",
-                                                 text: "A gente pega ela e deixa bonitinha pra você!")
+                                                 title: NSLocalizedString("onboarding_title0", comment: "Title for first on boarding screen"),
+                                                 text: NSLocalizedString("onboarding_text0", comment: "Text for first on boarding screen"))
+        
         let page2 = AddToSiriOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_ingredient"),
-                                                      title: "PEÇA AJUDA PARA A SIRI",
-                                                      text: "Pergunte quanto de um ingrediente você precisa colocar.",
+                                                      title: NSLocalizedString("onboarding_title_siri", comment: "Title for siri help on boarding screen"),
+                                                      text: NSLocalizedString("onboarding_text1", comment: "Text for second on boarding screen"),
                                                       intent: ingredientAmountIntent)
+        
         let page3 = AddToSiriOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_repeat"),
-                                                      title: "PEÇA AJUDA PARA A SIRI",
-                                                      text: "Peça para ela repetir o passo atual que você esqueceu.",
+                                                      title: NSLocalizedString("onboarding_title_siri", comment: "Title for siri help on boarding screen"),
+                                                      text: NSLocalizedString("onboarding_text2", comment: "Text for third on boarding screen"),
                                                       intent: repeatInstructionIntent)
+        
         let page4 = AddToSiriOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_next"),
-                                                      title: "PEÇA AJUDA PARA A SIRI",
-                                                      text: "Peça para ela dizer o próximo passo que você deve fazer.",
+                                                      title: NSLocalizedString("onboarding_title_siri", comment: "Title for siri help on boarding screen"),
+                                                      text: NSLocalizedString("onboarding_text3", comment: "Text for fourth on boarding screen"),
                                                       intent: nextInstructionIntent)
+        
         let page5 = TextOnBoardingViewController(image: #imageLiteral(resourceName: "onboarding_hat"), title: "", text: "", action: #selector(finish))
         
         self.pages.append(page1)

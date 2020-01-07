@@ -38,7 +38,7 @@ class TextOnBoarding: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 15
         view.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        view.setTitle("COMEÇAR", for: .normal)
+        view.setTitle(NSLocalizedString("onboarding_button", comment: "On boarding button text"), for: .normal)
         view.setTitleColor(.white, for: .normal)
         view.backgroundColor = UIColor(named: "Background")
         
