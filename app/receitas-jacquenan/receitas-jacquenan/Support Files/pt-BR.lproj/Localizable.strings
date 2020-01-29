@@ -7,7 +7,7 @@
 */
 "link_placeholder" = "http://linkdareceita.com.br";
 "link_title" = "Link da receita";
-"ingredient_amount_suggestion" = "Quanto eu coloco?";
+"ingredient_amount_suggestion" = "Checar quantidade";
 "repeat_instruction_suggestion" = "Repetir passo";
 "next_instruction_suggestion" = "Próximo passo";
 "onboarding_title0" = "COLOQUE O LINK DE UMA RECEITA E COMECE A COZINHAR";

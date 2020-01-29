@@ -7,7 +7,7 @@
 */
 "link_placeholder" = "http://recipelink.com";
 "link_title" = "Recipe link";
-"ingredient_amount_suggestion" = "How much do I put?";
+"ingredient_amount_suggestion" = "Check amount";
 "repeat_instruction_suggestion" = "Repeat instruction";
 "next_instruction_suggestion" = "Next instruction";
 "onboarding_title0" = "Paste a recipe link and start cooking";
